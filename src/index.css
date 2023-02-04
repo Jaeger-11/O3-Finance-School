@@ -1,3 +1,26 @@
+@font-face{
+  font-family: benzin-bold;
+  src: url(/src/fonts/benzin-bold.ttf);
+}
+@font-face{
+  font-family: benzin-regular;
+  src: url(/src/fonts/benzin-regular.ttf);
+}
+@font-face{
+  font-family: benzin-medium;
+  src: url(/src/fonts/benzin-medium.ttf);
+}
+
+.benzin-bold{
+  font-family: benzin-bold;
+}
+.benzin-regular{
+  font-family: benzin-regular;
+}
+.benzin-medium{
+  font-family: benzin-medium;
+}
+
 .hero{
   background: #002478 url(/src/assets/hero-mobile-bg-image.png) left center no-repeat;
 }
