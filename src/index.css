@@ -2,6 +2,16 @@
   background: #002478 url(/src/assets/hero-mobile-bg-image.png) left center no-repeat;
 }
 
+@media screen and (min-width:768px){
+  .hero{
+    background:#002478 url(/src/assets/desktop-hero-bg.png) left center no-repeat;
+  }
+  .about{
+    background: #E6F3FF url(/src/assets//about-desktop.png) 90% center no-repeat;
+    background-size: 28%;
+  }
+}
+
 
 @tailwind base;
 @tailwind components;

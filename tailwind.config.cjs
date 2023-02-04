@@ -13,7 +13,8 @@ module.exports = {
     },
     extend: {
       backgroundImage:{
-        'mobile-update-bg': "url(/mobile-updates-bg.png)"
+        'mobile-update-bg': "url(/mobile-updates-bg.png)",
+        'desktop-update-bg': "url(/desktop-update-bg.png)"
       },
       colors: {
         darkblue: "#002478",

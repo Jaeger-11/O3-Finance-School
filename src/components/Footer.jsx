@@ -45,7 +45,7 @@ const Footer = () => {
                     {footerData.map(item => {
                         const { icon, text } = item
                         return (
-                            <div key={text} className="flex gap-4 my-2">
+                            <div key={icon} className="flex gap-4 my-2">
                                 <img src={icon} alt={text} className="w-4 "/>
                                 <p>{text}</p>
                             </div>
