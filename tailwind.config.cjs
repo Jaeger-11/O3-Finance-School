@@ -12,6 +12,9 @@ module.exports = {
       xl: '1440px'
     },
     extend: {
+      backgroundImage:{
+        'mobile-update-bg': "url(/mobile-updates-bg.png)"
+      },
       colors: {
         darkblue: "#002478",
         sharpblue:"#4A0DFF",

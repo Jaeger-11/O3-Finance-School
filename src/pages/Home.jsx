@@ -58,6 +58,20 @@ function Home() {
         </article>
       </section>
 
+
+      {/* Updates Section */}
+      <section className="bg-mobile-update-bg bg-no-repeat bg-cover text-white py-8 px-4 text-center font-alternate">
+        <article  className="container mx-auto flex flex-col gap-4">
+          <h2 className="text-xl font-bold">DONT WANT TO MISS OUT ON UPDATES?</h2>
+          <p>Subscribe to our newsletter and get updated news on tokens, coins and other finance news</p>
+          <div className="border border-sharpblue rounded-md overflow-hidden">
+            <input type="email" name="email" id="email" 
+            placeholder="E-mail Address" 
+            className="px-4 bg-[rgba(74, 13, 255, 0.2);] focus:border-none"/>
+            <button className="text-white bg-sharpblue px-2 py-1 font-semibold">Subscribe</button>
+          </div>
+        </article>
+      </section>
       <Footer/>
     </div>
   )
