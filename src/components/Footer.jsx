@@ -26,10 +26,10 @@ const footerData = [
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
-        <section className='container mx-auto font-alternate px-8 py-8'>
+    <footer className="bg-black text-white py-6">
+        <section className='container mx-auto font-alternate px-8 py-8 md:flex md:flex-row-reverse md:justify-around md:items-start'>
 
-            <div className='flex flex-col gap-6'>
+            <div className='flex flex-col gap-6 md:flex-row md:flex-1 md:justify-around md:mt-4'>
                 <section>
                     <h3 className='font-bold'>QUICK LINKS</h3>
                     <ul className='list-disc pl-4'>
@@ -54,7 +54,7 @@ const Footer = () => {
                 </section>
             </div>
 
-            <div className='my-6'>
+            <div className='my-6 md:my-0'>
                 <img src={logo} alt="logo" className='h-[2.2rem]'/>
                 <p className='italic font-[500] pl-6 text-[10px]'>....bringing financial liberation to all</p>
             </div>
