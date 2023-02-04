@@ -1,7 +1,8 @@
 import heroImage from "../assets/hero.png";
 import desktopHeroImage from "../assets/desktop-hero.png";
-import discord from "../assets/discord.svg"
-import telegram from "../assets/telegram.svg"
+import discord from "../assets/discord.svg";
+import telegram from "../assets/telegram.svg";
+import Footer from "../components/Footer";
 
 function Home() {
 
@@ -56,6 +57,8 @@ function Home() {
           </div>
         </article>
       </section>
+
+      <Footer/>
     </div>
   )
 }
