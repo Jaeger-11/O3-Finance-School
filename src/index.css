@@ -1,0 +1,10 @@
+.hero{
+  background: #002478 url(/src/assets/hero-mobile-bg-image.png) left center no-repeat;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
