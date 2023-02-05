@@ -47,7 +47,7 @@ const Footer = () => {
                         return (
                             <div key={icon} className="flex gap-4 my-2">
                                 <img src={icon} alt={text} className="w-4 "/>
-                                <p>{text}</p>
+                                <p className='w-[10px] md:w-auto'>{text}</p>
                             </div>
                         )
                     })}

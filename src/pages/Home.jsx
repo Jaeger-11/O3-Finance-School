@@ -3,6 +3,7 @@ import desktopHeroImage from "../assets/desktop-hero.png";
 import discord from "../assets/discord.svg";
 import telegram from "../assets/telegram.svg";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 function Home() {
 
@@ -10,6 +11,7 @@ function Home() {
     <div>
       {/* hero section */}
       <main className='hero '>
+        <Navbar/>
         <div className='container mx-auto'>
         <section className='flex flex-col gap-6 px-4 py-8 md:px-0 md:pb-12 md:flex-row-reverse md:justify-center md:items-center'>
           <div className="md:flex-[40%]">
