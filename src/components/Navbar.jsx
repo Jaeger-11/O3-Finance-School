@@ -19,20 +19,33 @@ const Navbar = () => {
 
         {/* <!-- menu items --> */}
         <div class="hidden md:flex gap-8 items-center">
-          <a href="/" class="hover:font-bold text-white font-medium">Home</a>
-          <a href="#" class="hover:font-bold text-white font-medium">About Us</a>
-          <a href="#" class="hover:font-bold text-white font-medium">Courses</a>
-          <a href="#" class="hover:font-bold text-white font-medium">Contact</a>
-          <a href="#" class="hover:font-bold text-white font-medium">Events</a>
+          <a href="/" className="hover:font-bold text-white font-medium">Home</a>
+          <a href="#" className="hover:font-bold text-white font-medium">About Us</a>
+          <a href="#" className="hover:font-bold text-white font-medium">Courses</a>
+          <a href="#" className="hover:font-bold text-white font-medium">Contact</a>
+          <a href="#" className="hover:font-bold text-white font-medium">Events</a>
         </div>
 
         {/* <!-- Hamburger Icon --> */}
-        <button class={clicked ? "open hamburger md:hidden" : "hamburger md:hidden"} id="menu-btn" onClick={toggleClicked}>
-          <span class="hamburger-top "></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
+        <button className={clicked ? "open hamburger md:hidden" : "hamburger md:hidden"} id="menu-btn" onClick={toggleClicked}>
+          <span className="hamburger-top "></span>
+          <span className="hamburger-middle"></span>
+          <span className="hamburger-bottom"></span>
         </button>
       </div>
+
+      {/* <!-- Mobile Menu --> */}
+      { clicked ?  
+      <div class="md:hidden">
+        <div id="menu" className="absolute flex flex-col items-center text-center rounded-md left-6 right-6 self-end py-4 mt-2 gap-4 bg-black">
+          <p><a href="/" className="hover:font-bold text-white font-medium">Home</a></p>
+          <p><a href="/" className="hover:font-bold text-white font-medium">About Us</a></p>
+          <p><a href="/" className="hover:font-bold text-white font-medium">Courses</a></p>
+          <p><a href="/" className="hover:font-bold text-white font-medium">Contact</a></p>
+          <p><a href="/" className="hover:font-bold text-white font-medium">Events</a></p>
+        </div>
+      </div> : undefined
+      }
     </nav>
   )
 }
