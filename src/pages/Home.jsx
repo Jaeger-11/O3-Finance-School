@@ -69,7 +69,7 @@ function Home() {
           <div className="border border-sharpblue bg-sharpblue w-max mx-auto rounded-md overflow-hidden">
             <input type="email" name="email" id="email" 
             placeholder="E-mail Address" 
-            className="px-4 bg-[rgba(74, 13, 255, 0.2);] ml-1 w-[55vw] sm:w-auto md:pl-12 md:py-1"/>
+            className="px-4 bg-[rgba(74, 13, 255, 0.2);] text-sharpblue focus:outline-none ml-1 w-[55vw] sm:w-auto md:pl-12 md:py-1"/>
             <button className="text-white bg-sharpblue px-2 py-1 font-semibold md:px-6 md:py-2">Subscribe</button>
           </div>
         </article>
