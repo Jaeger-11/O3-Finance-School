@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
 
             <div className='my-6 md:my-0'>
-                <img src={logo} alt="logo" className='h-[2.2rem]'/>
+                <a href="/"><img src={logo} alt="logo" className='h-[2.2rem]'/></a>
                 <p className='italic font-[500] pl-6 text-[10px]'>....bringing financial liberation to all</p>
             </div>
         </section>

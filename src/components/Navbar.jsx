@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="font-alternate mx-auto p-4 md:p-0 md:pt-8 md:pb-4 md:border-b md:border-white">
       <div className="flex items-center justify-between container mx-auto">
         <div>
-          <img src={logo} alt="logo" className='md:w-[200px]'/>
+          <a href="/"><img src={logo} alt="logo" className='md:w-[200px]'/></a>
         </div>
 
         {/* <!-- menu items --> */}
