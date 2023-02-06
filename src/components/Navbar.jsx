@@ -39,13 +39,13 @@ const Navbar = () => {
       { clicked ?  
       <div class="md:hidden">
         <div id="menu" className="absolute flex flex-col items-center text-center rounded-md left-6 right-6 self-end py-4 mt-2 gap-4 bg-black">
-          <p><a href="/" className="hover:font-bold text-white font-medium">Home</a></p>
-          <p><a href="/" className="hover:font-bold text-white font-medium">About Us</a></p>
-          <p><a href="/" className="hover:font-bold text-white font-medium">Courses</a></p>
-          <p><a href="/" className="hover:font-bold text-white font-medium">Contact</a></p>
-          <p><a href="/" className="hover:font-bold text-white font-medium">Events</a></p>
+          <p><Link to="/" className="hover:font-bold text-white font-medium">Home</Link></p>
+          <p><Link to="/about" className="hover:font-bold text-white font-medium">About Us</Link></p>
+          <p><Link to="/courses" className="hover:font-bold text-white font-medium">Courses</Link></p>
+          <p><Link to="/contact" className="hover:font-bold text-white font-medium">Contact</Link></p>
+          <p><Link to="/events" className="hover:font-bold text-white font-medium">Events</Link></p>
         </div>
-      </div> : undefined
+      </div> : null
       }
     </nav>
   )
