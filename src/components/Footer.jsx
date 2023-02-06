@@ -1,9 +1,10 @@
 import React from 'react';
-import twitter from '../assets/twitter.svg'
-import instagram from '../assets/instagram.svg'
-import phone from '../assets/phone.svg'
-import email from '../assets/email.svg'
-import logo from '../assets/logo.svg'
+import twitter from '../assets/twitter.svg';
+import instagram from '../assets/instagram.svg';
+import phone from '../assets/phone.svg';
+import email from '../assets/email.svg';
+import logo from '../assets/logo.svg';
+import { Link } from "react-router-dom";
 
 const footerData = [
     {
@@ -33,10 +34,10 @@ const Footer = () => {
                 <section>
                     <h3 className='font-bold'>QUICK LINKS</h3>
                     <ul className='list-disc pl-4'>
-                        <li className='my-2'> <a href="http://" target="_blank" rel="noopener noreferrer"> About us </a></li>
-                        <li className='my-2'> <a href="http://" target="_blank" rel="noopener noreferrer"> Courses </a></li>
-                        <li className='my-2'> <a href="http://" target="_blank" rel="noopener noreferrer"> Events </a></li>
-                        <li className='my-2'> <a href="http://" target="_blank" rel="noopener noreferrer"> Communities </a></li>
+                        <li className='my-2'> <Link to="/about"> About us </Link></li>
+                        <li className='my-2'> <Link to="/courses"> Courses </Link></li>
+                        <li className='my-2'> <Link to="/events"> Events </Link></li>
+                        <li className='my-2'> <Link to="/communities"> Communities </Link></li>
                     </ul>
                 </section>
 
@@ -55,7 +56,7 @@ const Footer = () => {
             </div>
 
             <div className='my-6 md:my-0'>
-                <a href="/"><img src={logo} alt="logo" className='h-[2.2rem]'/></a>
+                <Link to="/"><img src={logo} alt="logo" className='h-[2.2rem]'/></Link>
                 <p className='italic font-[500] pl-6 text-[10px]'>....bringing financial liberation to all</p>
             </div>
         </section>

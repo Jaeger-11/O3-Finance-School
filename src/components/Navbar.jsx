@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "../assets/logo.svg";
-import {useState} from "react"
+import {useState} from "react";
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
 
@@ -19,11 +20,11 @@ const Navbar = () => {
 
         {/* <!-- menu items --> */}
         <div class="hidden md:flex gap-8 items-center">
-          <a href="/" className="hover:font-bold text-white font-medium">Home</a>
-          <a href="#" className="hover:font-bold text-white font-medium">About Us</a>
-          <a href="#" className="hover:font-bold text-white font-medium">Courses</a>
-          <a href="#" className="hover:font-bold text-white font-medium">Contact</a>
-          <a href="#" className="hover:font-bold text-white font-medium">Events</a>
+          <Link to="/" className="hover:font-bold text-white font-medium">Home</Link>
+          <Link to="/about" className="hover:font-bold text-white font-medium">About Us</Link>
+          <Link to="/courses" className="hover:font-bold text-white font-medium">Courses</Link>
+          <Link to="/contact" className="hover:font-bold text-white font-medium">Contact</Link>
+          <Link to="/events" className="hover:font-bold text-white font-medium">Events</Link>
         </div>
 
         {/* <!-- Hamburger Icon --> */}
