@@ -19,7 +19,7 @@ function Home() {
             <img src={desktopHeroImage} alt="finance photo" className="hidden md:block"/>
           </div>
           <article className="text-center text-white md:text-left md:flex-[60%]">
-            <h3 className="text-lg mb-2 md:text-4xl benzin-bold">We teach you about finance</h3>
+            <h3 className="text-xl mb-2 md:text-4xl benzin-bold">We teach you about finance</h3>
             <p className="md:text-2xl benzin-regular">Financial information to achieve wealth creation, wealth sustainability, and wealth management</p>
           </article>
         </section>
@@ -29,7 +29,7 @@ function Home() {
       {/* About section */}
       <section className="py-8 px-4 bg-lightblue about md:py-12">
         <article className="container mx-auto">
-          <h3 className="text-darkblue text-2xl benzin-bold ">About Us</h3>
+          <h3 className="text-darkblue text-xl benzin-bold md:text-2xl">About Us</h3>
           <h4 className="text-lg font-bold font-alternate my-2">#On a Mission to drive Financial Independence.</h4>
 
           <div className="flex flex-col gap-4 font-alternate md:text-xl">
