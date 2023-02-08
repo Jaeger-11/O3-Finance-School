@@ -23,7 +23,20 @@
 
 .hero{
   background: #002478 url(/src/assets/hero-mobile-bg-image.png) left center no-repeat;
+
 }
+
+.bg-pan-left{animation:bg-pan-left 8s 3 both}
+
+@keyframes bg-pan-left{0%{background-position:100% 50%}100%{background-position:0 50%}}
+
+.bounce-top{animation:bounce-top 2s infinite both}
+
+@keyframes bounce-top{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+
+.tracking-in-contract{animation:tracking-in-contract 1.5s cubic-bezier(.215,.61,.355,1.000) 4s both}
+
+@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
 
 .hamburger{
   width: 24px;

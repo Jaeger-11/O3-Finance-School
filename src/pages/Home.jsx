@@ -10,7 +10,7 @@ function Home() {
   return (
     <div>
       {/* hero section */}
-      <main className='hero '>
+      <main className='hero  bg-pan-left'>
         <Navbar/>
         <div className='container mx-auto'>
         <section className='flex flex-col gap-6 px-4 py-8 md:px-0 md:pb-12 md:flex-row-reverse md:justify-center md:items-center'>
@@ -19,7 +19,7 @@ function Home() {
             <img src={desktopHeroImage} alt="finance photo" className="hidden md:block"/>
           </div>
           <article className="text-center text-white md:text-left md:flex-[60%]">
-            <h3 className="text-xl mb-2 md:text-4xl benzin-bold">We teach you about finance</h3>
+            <h3 className="text-xl mb-2 md:text-4xl benzin-bold tracking-in-contract">We teach you about finance</h3>
             <p className="md:text-2xl benzin-regular">Financial information to achieve wealth creation, wealth sustainability, and wealth management</p>
           </article>
         </section>
@@ -48,11 +48,11 @@ function Home() {
           <h3 className="text-darkblue text-lg benzin-medium md:text-2xl">JOIN OUR COMMMUNITIES</h3>
           <p className="text-white font-alternate text-base md:text-xl md:my-6">Become a student and join other finance and blockchain enthusiast in our community. Share and gain ideas from different brains</p>
           <div className="w-[100%] my-4 md:flex md:justify-around md:items-center">
-            <button className="bg-white text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md">
+            <button className="bg-white text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md bounce-top">
               <p className="font-alternate font-[600] text-[16px]">Join our Telegram channel</p>
               <img src={telegram} alt="telegram" />
             </button>
-            <button className="bg-white mt-2 text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md md:mt-0">
+            <button className="bg-white mt-2 text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md md:mt-0 bounce-top">
               <p className="font-alternate font-[600]">Join our Discord channel</p>
               <img src={discord} alt="discord" />
             </button>
