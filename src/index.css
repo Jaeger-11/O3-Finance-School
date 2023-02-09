@@ -26,7 +26,7 @@
 
 }
 
-.bg-pan-left{animation:bg-pan-left 8s 3 both}
+.bg-pan-left{-webkit-animation:bg-pan-left 8s 5s infinite both;animation:bg-pan-left 8s 5s infinite both}
 
 @keyframes bg-pan-left{0%{background-position:100% 50%}100%{background-position:0 50%}}
 
@@ -37,6 +37,10 @@
 .tracking-in-contract{animation:tracking-in-contract 1.5s cubic-bezier(.215,.61,.355,1.000) 4s both}
 
 @keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+
+.color-change-2x{animation:color-change-2x 2s linear infinite alternate both}
+
+@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}
 
 .hamburger{
   width: 24px;
