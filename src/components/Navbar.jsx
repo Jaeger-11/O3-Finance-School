@@ -2,7 +2,6 @@ import React from 'react';
 import logo from "../assets/logo.svg";
 import {useState} from "react";
 import { Link } from "react-router-dom";
-import  Slide  from "react-reveal"
 
 const Navbar = () => {
 
@@ -39,7 +38,6 @@ const Navbar = () => {
       {/* <!-- Mobile Menu --> */}
       { clicked ?  
       <div class="md:hidden">
-        <Slide right>
         <div id="menu" className="absolute flex flex-col items-center text-center rounded-md left-6 right-6 self-end py-4 mt-2 gap-4 bg-black">
           <p><Link to="/" className="hover:font-bold text-white font-medium">Home</Link></p>
           <p><Link to="/about" className="hover:font-bold text-white font-medium">About Us</Link></p>
@@ -47,7 +45,6 @@ const Navbar = () => {
           <p><Link to="/contact" className="hover:font-bold text-white font-medium">Contact</Link></p>
           <p><Link to="/events" className="hover:font-bold text-white font-medium">Events</Link></p>
         </div>
-        </Slide>
       </div> : null
       }
     </nav>
