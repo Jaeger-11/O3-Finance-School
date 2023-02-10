@@ -5,7 +5,6 @@ import phone from '../assets/phone.svg';
 import email from '../assets/email.svg';
 import logo from '../assets/logo.svg';
 import { Link } from "react-router-dom";
-import { Fade } from 'react-reveal';
 
 const footerData = [
     {
@@ -29,7 +28,6 @@ const footerData = [
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-6">
-        <Fade bottom>
         <section className='container mx-auto font-alternate px-8 py-8 md:flex md:flex-row-reverse md:justify-around md:items-start'>
 
             <div className='flex flex-col gap-6 md:flex-row md:flex-1 md:justify-around md:mt-4'>
@@ -62,7 +60,7 @@ const Footer = () => {
                 <p className='italic font-[500] pl-6 text-[10px]'>....bringing financial liberation to all</p>
             </div>
         </section>
-        </Fade>
+        
     </footer>
   )
 }

@@ -48,14 +48,14 @@ function Home() {
         <h3 className="text-darkblue text-lg benzin-medium md:text-2xl">JOIN OUR COMMMUNITIES</h3>
         <p className="text-white font-alternate text-base md:text-xl md:my-6">Become a student and join other finance and blockchain enthusiast in our community. Share and gain ideas from different brains</p>
           <div className="w-[100%] my-4 md:flex md:justify-around md:items-center">
-            <button className="bg-white text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md">
+            <a href="https://t.me/O3FinanceSchool" className="bg-white text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md">
               <p className="font-alternate font-[600] text-[16px]">Join our Telegram channel</p>
               <img src={telegram} alt="telegram" />
-            </button>
-            <button className="bg-white mt-2 text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md md:mt-0">
+            </a>
+            <a href="https://discord.gg/42smDNtS" className="bg-white mt-2 text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md md:mt-0">
               <p className="font-alternate font-[600]">Join our Discord channel</p>
               <img src={discord} alt="discord" />
-            </button>
+            </a>
           </div>
         </article>
       </section>

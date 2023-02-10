@@ -37,7 +37,7 @@ const Navbar = () => {
 
       {/* <!-- Mobile Menu --> */}
       { clicked ?  
-      <div class="md:hidden">
+      <div className="md:hidden">
         <div id="menu" className="absolute flex flex-col items-center text-center rounded-md left-6 right-6 self-end py-4 mt-2 gap-4 bg-black">
           <p><Link to="/" className="hover:font-bold text-white font-medium">Home</Link></p>
           <p><Link to="/about" className="hover:font-bold text-white font-medium">About Us</Link></p>
