@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../assets/logo.svg";
+import O3logo from "../assets/o3logo.png";
 import {useState} from "react";
 import { Link } from "react-router-dom";
 
@@ -15,7 +16,7 @@ const Navbar = () => {
     <nav className="font-alternate mx-auto p-4 md:p-0 md:pt-8 md:pb-4 md:border-b md:border-white">
       <div className="flex items-center justify-between container mx-auto">
         <div>
-          <a href="/"><img src={logo} alt="logo" className='md:w-[200px]'/></a>
+          <a href="/"><img src={O3logo} alt="O3 finance school" className='md:w-[200px]'/></a>
         </div>
 
         {/* <!-- menu items --> */}

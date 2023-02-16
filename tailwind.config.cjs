@@ -23,7 +23,7 @@ module.exports = {
         lightgreen:"#3ACF01"
       },
       fontFamily:{
-        alternate: ['Montserrat Alternates', 'sans-serif']
+        alternate: ['Montserrat', 'sans-serif']
       }
     }
   },
