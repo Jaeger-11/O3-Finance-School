@@ -3,6 +3,27 @@ import discord from "../assets/discord.svg";
 import telegram from "../assets/telegram.svg";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import coursesicon from "../assets/coursesicon.png";
+import studentsicon from "../assets/studentsicon.png";
+import teachersicon from "../assets/teachersicon.png";
+
+const stats = [
+  {
+    icon: coursesicon,
+    text: "Courses",
+    count: 10
+  },
+  {
+    icon: studentsicon,
+    text: "Students",
+    count: 75  
+  },
+  {
+    icon: teachersicon,
+    text: "Teachers",
+    count: 5  
+  },
+]
 
 function Home() {
 
@@ -21,10 +42,28 @@ function Home() {
             <p className="md:text-2xl benzin-regular">Financial information to achieve wealth creation, wealth sustainability, and wealth management</p>
             <button className="text-darkblue my-4 font-medium text-base py-4 px-8 shadow-xl md:text-lg">Read More</button>
           </article>
-          
+        </section>
+        <section className="grad flex flex-col gap-4 justify-around py-6 md:m-8 md:flex-row md:gap-0">
+          {stats.map((info) => {
+            const { count, text, icon } = info
+            return (
+              <div key={text} className="flex flex-wrap justify-center">
+                <img src={icon} alt={text}/>
+                <p className="text-center md:text-left"> 
+                  <span className="text-xl text-darkblue benzin-medium md:text-3xl">{count}+</span> <br /> 
+                  <span className="text-base text-black benzin-regular md:text-lg">{text}</span>  
+                </p>
+              </div>
+            )
+          })}
         </section>
         </div>
       </main>
+
+      {/* Courses Section */}
+      <section>
+
+      </section>
 
       {/* About section */}
       <section className="py-8 px-4 bg-lightblue about md:py-12">
