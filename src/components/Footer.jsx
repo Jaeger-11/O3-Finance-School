@@ -3,7 +3,7 @@ import twitter from '../assets/twitter-black.svg';
 import instagram from '../assets/instagram-black.svg';
 import phone from '../assets/phone-black.svg';
 import email from '../assets/mail-black.svg';
-import logo from '../assets/O3logo.png';
+import logo from '../assets/o3logo.png';
 import { Link } from "react-router-dom";
 
 const footerData = [
