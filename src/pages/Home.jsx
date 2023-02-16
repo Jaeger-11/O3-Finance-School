@@ -1,5 +1,4 @@
-import heroImage from "../assets/hero.png";
-import desktopHeroImage from "../assets/desktop-hero.png";
+import heroImage from "../assets/heroimagenew.png";
 import discord from "../assets/discord.svg";
 import telegram from "../assets/telegram.svg";
 import Footer from "../components/Footer";
@@ -15,13 +14,14 @@ function Home() {
         <div className='container mx-auto'>
         <section className='flex flex-col gap-6 px-4 py-8 md:px-0 md:pb-12 md:flex-row-reverse md:justify-center md:items-center'>
           <div className="md:flex-[40%]">
-            <img src={heroImage} alt="finance photo" className="mx-auto w-1/2 md:hidden" />
-            <img src={desktopHeroImage} alt="finance photo" className="hidden md:block"/>
+            <img src={heroImage} alt="finance photo" className="mx-auto" />
           </div>
-          <article className="text-center text-white md:text-left md:flex-[60%]">
-            <h3 className="text-xl mb-2 md:text-4xl benzin-bold">We teach you about finance</h3>
+          <article className="text-center text-black md:text-left md:flex-[60%]">
+            <h3 className="text-xl mb-2 md:text-4xl benzin-bold">We teach <br /> you about <span className="text-darkblue">finance</span> </h3>
             <p className="md:text-2xl benzin-regular">Financial information to achieve wealth creation, wealth sustainability, and wealth management</p>
+            <button className="text-darkblue my-4 font-medium text-base py-4 px-8 shadow-xl md:text-lg">Read More</button>
           </article>
+          
         </section>
         </div>
       </main>
