@@ -11,6 +11,10 @@
   src: url(/src/fonts/benzin-medium.ttf);
 }
 
+body{
+  background-color: white;
+}
+
 .benzin-bold{
   font-family: benzin-bold;
 }
@@ -24,10 +28,11 @@
 .grad{
   background: linear-gradient(92.47deg, rgba(0, 36, 120, 0.15) 1.14%, rgba(0, 36, 120, 0.04) 68.83%);
 }
-
+/* 
 .hero{
   background: #002478 url(/src/assets/hero-mobile-bg-image.png) left center no-repeat;
-}
+} */
+
 
 .hamburger{
   width: 24px;
@@ -75,9 +80,9 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
 
 
 @media screen and (min-width:768px){
-  .hero{
+  /* .hero{
     background:#002478 url(/src/assets/desktop-hero-bg.png) left center no-repeat;
-  }
+  } */
   .about{
     background: #E6F3FF url(/src/assets//about-desktop.png) 90% center no-repeat;
     background-size: 28%;

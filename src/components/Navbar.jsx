@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from "../assets/logo.svg";
 import O3logo from "../assets/o3logo.png";
 import {useState} from "react";
 import { Link } from "react-router-dom";
@@ -13,19 +12,24 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="font-alternate mx-auto p-4 md:p-0 md:pt-8 md:pb-4 md:border-b md:border-white">
+    <nav className="font-alternate text-darkblue mx-auto p-4 md:p-0 md:pt-8 md:pb-4">
       <div className="flex items-center justify-between container mx-auto">
         <div>
-          <a href="/"><img src={O3logo} alt="O3 finance school" className='md:w-[200px]'/></a>
+          <a href="/"><img src={O3logo} alt="O3 finance school"/></a>
         </div>
 
         {/* <!-- menu items --> */}
         <div class="hidden md:flex gap-8 items-center">
-          <Link to="/" className="hover:font-bold text-white font-medium">Home</Link>
-          <Link to="/about" className="hover:font-bold text-white font-medium">About Us</Link>
-          <Link to="/courses" className="hover:font-bold text-white font-medium">Courses</Link>
-          <Link to="/contact" className="hover:font-bold text-white font-medium">Contact</Link>
-          <Link to="/events" className="hover:font-bold text-white font-medium">Events</Link>
+          <Link to="/" className="hover:font-bold font-medium">Home</Link>
+          <Link to="/about" className="hover:font-bold font-medium">About Us</Link>
+          <Link to="/courses" className="hover:font-bold font-medium">Courses</Link>
+          <Link to="/contact" className="hover:font-bold font-medium">Contact</Link>
+          <Link to="/events" className="hover:font-bold font-medium">Events</Link>
+        </div>
+
+        <div className='border-l border-opacity-50 border-darkblue'>
+          <button className='py-2 px-3 border border-darkblue text-darkblue hover:text-white hover:bg-darkblue md:mx-4'>Sign up</button>
+          <button className='py-2 px-4 bg-darkblue text-white hover:bg-white hover:text-darkblue hover:border hover:border-darkblue'>Login</button>
         </div>
 
         {/* <!-- Hamburger Icon --> */}
