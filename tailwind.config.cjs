@@ -20,7 +20,8 @@ module.exports = {
         darkblue: "#002478",
         sharpblue:"#4A0DFF",
         lightblue:"#E6F3FF",
-        lightgreen:"#3ACF01"
+        lightgreen:"#3ACF01",
+        offwhite: "#FAFAFC"
       },
       fontFamily:{
         alternate: ['Montserrat', 'sans-serif']

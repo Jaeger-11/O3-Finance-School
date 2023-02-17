@@ -3,28 +3,10 @@ import discord from "../assets/discord.svg";
 import telegram from "../assets/telegram.svg";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import coursesicon from "../assets/coursesicon.png";
-import studentsicon from "../assets/studentsicon.png";
-import teachersicon from "../assets/teachersicon.png";
 import CoursesHome from "../components/CoursesHome";
+import { stats } from "../data";
+import community from "../assets/communities.png";
 
-const stats = [
-  {
-    icon: coursesicon,
-    text: "Courses",
-    count: 10
-  },
-  {
-    icon: studentsicon,
-    text: "Students",
-    count: 75  
-  },
-  {
-    icon: teachersicon,
-    text: "Teachers",
-    count: 5  
-  },
-]
 
 function Home() {
 
@@ -67,7 +49,7 @@ function Home() {
       </section>
 
       {/* About section */}
-      <section className="py-8 px-4 bg-lightblue about md:py-12">
+      {/* <section className="py-8 px-4 bg-lightblue about md:py-12">
         <article className="container mx-auto">
           <h3 className="text-darkblue text-xl benzin-bold md:text-2xl">About Us</h3>
           <h4 className="text-lg font-bold font-alternate my-2">#On a Mission to drive Financial Independence.</h4>
@@ -79,27 +61,25 @@ function Home() {
             <p>Our focus is to create impactful programs that will make a pathway for youths to take appropriate actions for the development of themselves, and global village.</p>
           </div>
         </article>
-      </section>
+      </section> */}
 
       {/* Join Community Section */}
-      <section className="py-8 px-4 bg-white">
-        <article className="text-center bg-lightgreen p-4 md:w-1/2 md:mx-auto">
-        <p className="text-[#DBFFCD] text-lg benzin-medium md:text-2xl">Want to become a student?</p>
-        <h3 className="text-darkblue text-lg benzin-medium md:text-2xl">JOIN OUR COMMMUNITIES</h3>
-        <p className="text-white font-alternate text-base md:text-xl md:my-6">Become a student and join other finance and blockchain enthusiast in our community. Share and gain ideas from different brains</p>
-          <div className="w-[100%] my-4 md:flex md:justify-around md:items-center">
-            <a href="https://t.me/O3FinanceSchool" className="bg-white text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md">
-              <p className="font-alternate font-[600] text-[16px]">Join our Telegram channel</p>
+      <section className="container mx-auto py-6 benzin-bold">
+        <h3 className="text-center text-lg md:text-2xl">Join Our Communities</h3>
+        <div className="flex flex-col gap-6 md:flex-row">
+          <img src={community} alt="communities illustration" className="flex-1"/>
+          <div className="flex flex-col justify-center md:flex-1 gap-8">
+            <a href="https://t.me/O3FinanceSchool" className="bg-white flex gap-8 p-4 mx-auto rounded-md shadow-md w-3/4">
               <img src={telegram} alt="telegram" />
+              <p >Telegram channel</p>
             </a>
-            <a href="https://discord.gg/42smDNtS" className="bg-white mt-2 text-sharpblue flex gap-2 justify-center items-center px-4 mx-auto rounded-md md:mt-0">
-              <p className="font-alternate font-[600]">Join our Discord channel</p>
+            <a href="https://discord.gg/42smDNtS" className="bg-white flex gap-8 p-4 mx-auto rounded-md shadow-md w-3/4">
               <img src={discord} alt="discord" />
+              <p >Discord channel</p>
             </a>
           </div>
-        </article>
+        </div>
       </section>
-
 
       {/* Updates Section */}
       <section className="bg-mobile-update-bg bg-no-repeat bg-cover text-white py-12 px-4 text-center font-alternate md:bg-desktop-update-bg">

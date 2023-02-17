@@ -1,6 +1,27 @@
 import illustration1 from "./assets/course1.png";
 import illustration2 from "./assets/course2.png";
 import illustration3 from "./assets/course3.png";
+import coursesicon from "./assets/coursesicon.png";
+import studentsicon from "./assets/studentsicon.png";
+import teachersicon from "./assets/teachersicon.png";
+
+export const stats = [
+    {
+      icon: coursesicon,
+      text: "Courses",
+      count: 10
+    },
+    {
+      icon: studentsicon,
+      text: "Students",
+      count: 75  
+    },
+    {
+      icon: teachersicon,
+      text: "Teachers",
+      count: 5  
+    },
+  ]
 
 export const courses = [
     {

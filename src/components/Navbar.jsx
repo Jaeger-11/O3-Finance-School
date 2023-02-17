@@ -49,7 +49,7 @@ const Navbar = () => {
           <p><Link to="/courses" className="hover:font-bold text-white font-medium">Courses</Link></p>
           <p><Link to="/contact" className="hover:font-bold text-white font-medium transition-all">Contact</Link></p>
           <p><Link to="/events" className="hover:font-bold text-white font-medium transition-all">Events</Link></p>
-          <button className='py-2 px-3 transition-all border border-darkblue text-darkblue hover:text-white hover:bg-darkblue md:mx-4'>Sign up</button>
+          <button className='py-2 px-3 transition-all border border-darkblue bg-white text-darkblue hover:text-white hover:bg-darkblue md:mx-4'>Sign up</button>
           <button className='py-2 px-4 transition-all bg-darkblue text-white hover:bg-white hover:text-darkblue hover:border hover:border-darkblue'>Login</button>
 
         </div>
