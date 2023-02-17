@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import coursesicon from "../assets/coursesicon.png";
 import studentsicon from "../assets/studentsicon.png";
 import teachersicon from "../assets/teachersicon.png";
+import CoursesHome from "../components/CoursesHome";
 
 const stats = [
   {
@@ -43,7 +44,7 @@ function Home() {
             <button className="text-darkblue my-4 font-medium text-base py-4 px-8 shadow-xl md:text-lg">Read More</button>
           </article>
         </section>
-        <section className="grad flex flex-col gap-4 justify-around py-6 md:m-8 md:flex-row md:gap-0">
+        <section className="grad flex flex-col gap-4 justify-around py-6 mb-8 md:m-8 md:flex-row md:gap-0">
           {stats.map((info) => {
             const { count, text, icon } = info
             return (
@@ -61,8 +62,8 @@ function Home() {
       </main>
 
       {/* Courses Section */}
-      <section>
-
+      <section className="mt-24 grad py-8">
+        <CoursesHome/>
       </section>
 
       {/* About section */}
