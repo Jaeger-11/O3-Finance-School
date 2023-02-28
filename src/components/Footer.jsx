@@ -3,7 +3,7 @@ import twitter from '../assets/twitter-black.svg';
 import instagram from '../assets/instagram-black.svg';
 import phone from '../assets/phone-black.svg';
 import email from '../assets/mail-black.svg';
-import logo from '../assets/o3logo.png';
+import logo from '../assets/footerLogo.png';
 import { Link } from "react-router-dom";
 
 const footerData = [
@@ -56,8 +56,7 @@ const Footer = () => {
             </div>
 
             <div className='my-6 md:my-0'>
-                <Link to="/"><img src={logo} alt="logo" className='h-[2.2rem]'/></Link>
-                <p className='italic font-medium pl-6 text-[12px]'>....bringing financial liberation to all</p>
+                <Link to="/"><img src={logo} alt="logo"/></Link>
             </div>
         </section>
         
