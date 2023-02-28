@@ -47,10 +47,9 @@ body{
 }
 
 .home{
-  background: url(/src/assets/about-bg.svg) -200px 95vh no-repeat;
-  background-size: 500px;
+  background: url(/src/assets/about-bg.svg) -100px 20% no-repeat;
+  background-size: 300px;
 }
-
 
 .hamburger{
   width: 24px;
@@ -104,6 +103,10 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   .about{
     background: #E6F3FF url(/src/assets//about-desktop.png) 90% center no-repeat;
     background-size: 28%;
+  }
+  .home{
+    background: url(/src/assets/about-bg.svg) -200px 95vh no-repeat;
+  background-size: 500px;
   }
 }
 
