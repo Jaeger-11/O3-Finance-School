@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import CoursesHome from "../components/CoursesHome";
 import { stats } from "../data";
 import community from "../assets/communities.png";
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -23,7 +24,7 @@ function Home() {
           <article className="text-center text-black md:text-left md:flex-[60%]">
             <h3 className="text-xl mb-2 md:text-4xl benzin-bold">We teach <br /> you about <span className="text-darkblue">finance</span> </h3>
             <p className="md:text-2xl benzin-regular">Financial information to achieve wealth creation, wealth sustainability, and wealth management</p>
-            <button className="text-darkblue my-4 font-medium text-base py-4 px-8 shadow-xl md:text-lg">Read More</button>
+            <Link to='/about'><button className="text-darkblue my-4 font-medium text-base py-4 px-8 shadow-xl md:text-lg">Read More</button></Link>
           </article>
         </section>
         <section className="grad flex flex-col gap-4 justify-around py-6 mb-8 md:m-8 md:flex-row md:gap-0">
@@ -47,21 +48,6 @@ function Home() {
       <section className="mt-24 grad py-8">
         <CoursesHome/>
       </section>
-
-      {/* About section */}
-      {/* <section className="py-8 px-4 bg-lightblue about md:py-12">
-        <article className="container mx-auto">
-          <h3 className="text-darkblue text-xl benzin-bold md:text-2xl">About Us</h3>
-          <h4 className="text-lg font-bold font-alternate my-2">#On a Mission to drive Financial Independence.</h4>
-
-          <div className="flex flex-col gap-4 font-alternate md:text-xl">
-            <p>03 Finance School was birthed as a result of the harm that lack of financial Information has caused many individuals and countries in Africa.</p>
-            <p>The Initiative’s goal is to promote financial education in the areas of Wealth Creation, Wealth Sustainability, and Wealth Management.</p>
-            <p>We intend to organize seminars, workshops, webinars, online training, conferences, and charity events to boost financial education across Nigeria and Africa. We will conduct digital skills training and provide financial education for survival in the 21st century.</p>
-            <p>Our focus is to create impactful programs that will make a pathway for youths to take appropriate actions for the development of themselves, and global village.</p>
-          </div>
-        </article>
-      </section> */}
 
       {/* Join Community Section */}
       <section className="container mx-auto py-6 benzin-bold">

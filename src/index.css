@@ -28,9 +28,11 @@ body{
 .grad{
   background: linear-gradient(92.47deg, rgba(0, 36, 120, 0.15) 1.14%, rgba(0, 36, 120, 0.04) 68.83%);
   opacity: 0.7;
-box-shadow: 2px 2px 6px 7px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 2px 6px 7px rgba(0, 0, 0, 0.05);
 }
-
+.about-section{
+  background: url(/src/assets/aboutbgnew.png) right center no-repeat;
+}
 /* 
 .hero{
   background: #002478 url(/src/assets/hero-mobile-bg-image.png) left center no-repeat;
