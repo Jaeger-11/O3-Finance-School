@@ -12,7 +12,7 @@ const CoursesHome = () => {
             {courses.map((course) => {
                 const { intro, title, instructor, duration, students, teachers, illustration, free } = course
                 return (
-                    <div key={title} className='p-4 rounded-xl bg-white shadow-md max-w-[300px] font-alternate cursor-pointer'>
+                    <div key={instructor} className='p-4 rounded-xl bg-white shadow-md max-w-[300px] font-alternate cursor-pointer'>
                         <img src={illustration} alt="title" />
                         <article className='flex flex-col gap-2 mt-2'>
                             { free ? 
