@@ -30,6 +30,15 @@ body{
   opacity: 0.7;
   box-shadow: 2px 2px 6px 7px rgba(0, 0, 0, 0.05);
 }
+.hero-image-box{
+  background-image: url(/src/assets/hero-ellipse.svg), url(/src/assets/circlehero.png), url(/src/assets/hero-small-ellipse.svg);
+  background-position: 100% 0%, 0% 100%, 95% 75% ;
+  background-repeat: no-repeat;
+}
+.hero-content-box{
+  background: url(/src/assets/hero-distant-ellipse.svg) 90% 90% no-repeat;
+  background-size: 50px;
+}
 .about-section{
   background: url(/src/assets/aboutbgnew.png) right center no-repeat;
 }
@@ -50,7 +59,7 @@ body{
   background: url(/src/assets/about-bg.svg) -100px 20% no-repeat;
   background-size: 300px;
 }
-
+ 
 .hamburger{
   width: 24px;
   height: 24px;
@@ -97,9 +106,10 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
 
 
 @media screen and (min-width:768px){
-  /* .hero{
-    background:#002478 url(/src/assets/desktop-hero-bg.png) left center no-repeat;
-  } */
+  .hero-content-box{
+    background: url(/src/assets/hero-distant-ellipse.svg) 30% 90% no-repeat;
+    background-size: 70px;
+  }
   .about{
     background: #E6F3FF url(/src/assets//about-desktop.png) 90% center no-repeat;
     background-size: 28%;

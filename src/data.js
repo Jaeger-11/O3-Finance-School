@@ -65,7 +65,7 @@ export const courses = [
     },
     {
         title: "An Introduction to Defi",
-        instructor: " Samuel Bamigboye ",
+        instructor: " Alufa Ayomide ",
         intro:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         students: 10,
         teachers: 2,
@@ -73,8 +73,8 @@ export const courses = [
         illustration:illustration2
     },
     {
-        title: "Understanding the Concepts of Blockchain Technology",
-        instructor: " Olaoluwa Oluwasina ",
+        title: "Web 2 vs Web 3",
+        instructor: "Ola Aina  ",
         intro:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
         students: 10,
         teachers: 2,

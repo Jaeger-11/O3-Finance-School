@@ -17,11 +17,11 @@ function Home() {
       <main >
         <Navbar/>
         <div className='container mx-auto'>
-        <section className='flex flex-col gap-6 px-4 py-8 md:px-0 md:pb-12 md:flex-row-reverse md:justify-center md:items-center'>
-          <div className="md:flex-[40%]">
+        <section className='flex flex-col gap-6 px-4 py-8 hero-content-box md:px-0 md:pb-12 md:flex-row-reverse md:justify-center md:items-center'>
+          <div className="md:flex-[40%] hero-image-box ">
             <img src={heroImage} alt="finance photo" className="mx-auto" />
           </div>
-          <article className="text-center text-black md:text-left md:flex-[60%]">
+          <article className="text-center text-black md:text-left md:flex-[60%] ">
             <h3 className="text-xl mb-2 md:text-4xl benzin-bold">We teach <br /> you about <span className="text-darkblue">finance</span> </h3>
             <p className="md:text-2xl benzin-regular">Financial information to achieve wealth creation, wealth sustainability, and wealth management</p>
             <Link to='/about'><button className="text-darkblue my-4 font-medium text-base py-4 px-8 shadow-xl md:text-lg">Read More</button></Link>
