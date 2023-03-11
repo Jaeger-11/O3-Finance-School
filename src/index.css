@@ -116,7 +116,7 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   }
   .home{
     background: url(/src/assets/about-bg.svg) -200px 95vh no-repeat;
-  background-size: 500px;
+    background-size: 500px;
   }
 }
 

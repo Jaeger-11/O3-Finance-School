@@ -7,6 +7,7 @@ import CoursesHome from "../components/CoursesHome";
 import { stats } from "../data";
 import community from "../assets/communities.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 
 function Home() {
@@ -18,16 +19,31 @@ function Home() {
         <Navbar/>
         <div className='container mx-auto'>
         <section className='flex flex-col gap-6 px-4 py-8 hero-content-box md:px-0 md:pb-12 md:flex-row-reverse md:justify-center md:items-center'>
-          <div className="md:flex-[40%] hero-image-box ">
-            <img src={heroImage} alt="finance photo" className="mx-auto" />
+          <div 
+          className="md:flex-[40%] hero-image-box ">
+            <motion.img 
+            initial={{opacity: 0, x: 100}}
+            whileInView={{opacity:1, x:0}}
+            transition = {{duration: 1}}
+            src={heroImage} alt="finance photo" className="mx-auto" />
           </div>
-          <article className="text-center text-black md:text-left md:flex-[60%] ">
-            <h3 className="text-xl mb-2 md:text-4xl benzin-bold">We teach <br /> you about <span className="text-darkblue">finance</span> </h3>
+          <motion.article 
+          initial={{opacity:0}} 
+          whileInView={{ opacity: 1}} 
+          transition={{duration: 2}}
+          className="text-center text-black md:text-left md:flex-[60%] ">
+            <h3 className="text-xl transition-all mb-2 md:text-4xl benzin-bold">
+              We teach <br /> you about <span className="text-darkblue">finance</span> 
+            </h3>
             <p className="md:text-2xl benzin-regular">Financial information to achieve wealth creation, wealth sustainability, and wealth management</p>
             <Link to='/about'><button className="text-darkblue my-4 font-medium text-base py-4 px-8 shadow-xl md:text-lg">Read More</button></Link>
-          </article>
+          </motion.article>
         </section>
-        <section className="grad flex flex-col gap-4 justify-around py-6 mb-8 md:m-8 md:flex-row md:gap-0">
+        <motion.section
+        initial={{opacity:0, y:100}}
+        animate={{opacity:1, y:0}} 
+        duration={0.5}
+        className="grad flex flex-col gap-4 justify-around py-6 mb-8 md:m-8 md:flex-row md:gap-0">
           {stats.map((info) => {
             const { count, text, icon } = info
             return (
@@ -40,7 +56,7 @@ function Home() {
               </div>
             )
           })}
-        </section>
+        </motion.section>
         </div>
       </main>
 
@@ -54,8 +70,14 @@ function Home() {
         <div className="container mx-auto py-6 benzin-bold">
         <h3 className="text-center text-lg md:text-2xl">Join Our Communities</h3>
         <div className="flex flex-col gap-6 md:flex-row">
-          <img src={community} alt="communities illustration" className="flex-1"/>
-          <div className="flex flex-col justify-center md:flex-1 gap-8">
+          <motion.img
+          initial={{x: -200}}
+          whileInView={{x:0}} 
+          duration={0.5}
+          src={community} alt="communities illustration" className="flex-1"/>
+          <motion.div
+
+          className="flex flex-col justify-center md:flex-1 gap-8">
             <a href="https://t.me/O3FinanceSchool" className="bg-white flex gap-8 p-4 mx-auto rounded-md shadow-md w-3/4">
               <img src={telegram} alt="telegram" />
               <p >Telegram channel</p>
@@ -64,7 +86,7 @@ function Home() {
               <img src={discord} alt="discord" />
               <p >Discord channel</p>
             </a>
-          </div>
+          </motion.div>
         </div>
         </div>
       </section>
