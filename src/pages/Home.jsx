@@ -24,19 +24,25 @@ function Home() {
             <motion.img 
             initial={{opacity: 0, x: 100}}
             whileInView={{opacity:1, x:0}}
-            transition = {{duration: 1}}
+            transition = {{duration: 1, delay:0.1, type:'tween'}}
             src={heroImage} alt="finance photo" className="mx-auto" />
           </div>
           <motion.article 
-          initial={{opacity:0}} 
-          whileInView={{ opacity: 1}} 
-          transition={{duration: 2}}
+          initial={{opacity:0, y:100}} 
+          whileInView={{ opacity: 1, y:0}} 
+          transition={{duration: 1, delay: 0.1, type: 'tween'}}
           className="text-center text-black md:text-left md:flex-[60%] ">
             <h3 className="text-xl transition-all mb-2 md:text-4xl benzin-bold">
               We teach <br /> you about <span className="text-darkblue">finance</span> 
             </h3>
             <p className="md:text-2xl benzin-regular">Financial information to achieve wealth creation, wealth sustainability, and wealth management</p>
-            <Link to='/about'><button className="text-darkblue my-4 font-medium text-base py-4 px-8 shadow-xl md:text-lg">Read More</button></Link>
+            <Link to='/about'>
+              <motion.button 
+              whileTap={{scale:0.9}}
+              whileHover={{scale: 1.1}}
+              className="text-darkblue my-4 font-medium text-base py-4 px-8 shadow-xl md:text-lg">Read More
+              </motion.button>
+            </Link>
           </motion.article>
         </section>
         <motion.section
@@ -73,7 +79,7 @@ function Home() {
           <motion.img
           initial={{x: -200}}
           whileInView={{x:0}} 
-          duration={0.5}
+          transition={{duration: 0.5, type: 'tween'}}
           src={community} alt="communities illustration" className="flex-1"/>
           <motion.div
 

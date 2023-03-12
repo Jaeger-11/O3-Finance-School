@@ -3,6 +3,7 @@ import { courses } from '../data';
 import hours from "../assets/courses-duration.svg";
 import teacher from "../assets/courses-teacher.svg";
 import student from "../assets/courses-student.svg"; 
+import { motion } from 'framer-motion';
 
 const CoursesHome = () => {
   return (
@@ -12,14 +13,20 @@ const CoursesHome = () => {
             {courses.map((course) => {
                 const { intro, title, instructor, duration, students, teachers, illustration, free } = course
                 return (
-                    <div key={instructor} className='p-4 rounded-xl bg-white shadow-md max-w-[300px] font-alternate cursor-pointer'>
+                    <motion.div 
+                    whileHover={{scale:1.1, opacity:0.7}}
+                    whileTap={{scale:0.9}}
+                    initial={{opacity:0, y:100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration:0.5}}
+                    key={instructor} className='p-4 rounded-xl bg-white shadow-md max-w-[300px] font-alternate cursor-pointer'>
                         <img src={illustration} alt="title" />
                         <article className='flex flex-col gap-2 mt-2'>
                             { free ? 
                             <span className='text-sm text-lightgreen text-right font-bold'>Free*</span> : 
                             <span className='text-sm text-red-700 font-bold text-right'>Paid*</span> }
                             <h4 className='font-bold text-base'>{title}</h4>
-                            <p className='text-sm '>{intro}</p>
+                            <p className='text-sm'>{intro.substring(0,70)}...</p>
                             <p className="italic text-sm text-right">Instructor: <span className='font-bold'>{instructor}</span> </p>
                             <div className='flex justify-between'>
                                 <span className='flex justify-center items-center gap-2 text-sm'> <img src={student} alt="student icon" className='w-3'/> {students} </span>
@@ -27,7 +34,7 @@ const CoursesHome = () => {
                                 <span className='flex justify-center items-center gap-2 text-sm'> <img src={hours} alt="duration icon" className='w-3'/> {duration} hours+ </span>
                             </div>
                         </article>
-                    </div>
+                    </motion.div>
                 )
             })}
         </section>

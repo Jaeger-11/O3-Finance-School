@@ -2,6 +2,7 @@ import React from 'react';
 import O3logo from "../assets/o3logo.png";
 import {useState} from "react";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
 
@@ -12,7 +13,11 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="font-alternate text-darkblue mx-auto p-4 md:p-0 md:pt-8 md:pb-4">
+    <motion.nav className="font-alternate text-darkblue mx-auto p-4 md:p-0 md:pt-8 md:pb-4"
+    initial={{opacity:0,y:-50}}
+    animate={{opacity:1,y:0}}
+    transition={{duration:0.5}}
+    >
       <div className="flex items-center justify-between container mx-auto">
         <div>
           <a href="/"><img src={O3logo} alt="O3 finance school"/></a>
@@ -55,7 +60,7 @@ const Navbar = () => {
         </div>
       </div> : null
       }
-    </nav>
+    </motion.nav>
   )
 }
 

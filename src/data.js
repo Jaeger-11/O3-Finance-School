@@ -27,7 +27,7 @@ export const courses = [
     {
         title: "An Introduction to Web3",
         instructor: " Muyiwa Adebiyi ",
-        intro:"lorem ipsum dolor it intro course, the concepts of web3, effects and future adoption",
+        intro:"This course introduces the fundamental concepts of Blockchain technology and Web3., the concepts of web3, effects and future adoption",
         students: 10,
         teachers: 2,
         duration: 3,
@@ -37,7 +37,7 @@ export const courses = [
     {
         title: "An Introduction to Defi",
         instructor: " Samuel Bamigboye ",
-        intro:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        intro:"This course introduces the fundamental concepts of Blockchain technology and Web3., the concepts of web3, effects and future adoption",
         students: 10,
         teachers: 2,
         duration: 3,
@@ -47,7 +47,7 @@ export const courses = [
     {
         title: "Understanding the Concepts of Blockchain Technology",
         instructor: " Olaoluwa Oluwasina ",
-        intro:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        intro:"This course introduces the fundamental concepts of Blockchain technology and Web3., the concepts of web3, effects and future adoption",
         students: 10,
         teachers: 2,
         duration: 3,
@@ -56,7 +56,7 @@ export const courses = [
     {
         title: "Futures Trading",
         instructor: " Quadri Lawal ",
-        intro:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        intro:"This course introduces the fundamental concepts of Blockchain technology and Web3., the concepts of web3, effects and future adoption",
         students: 10,
         teachers: 2,
         duration: 3,
@@ -66,7 +66,7 @@ export const courses = [
     {
         title: "An Introduction to Defi",
         instructor: " Alufa Ayomide ",
-        intro:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        intro:"This course introduces the fundamental concepts of Blockchain technology and Web3., the concepts of web3, effects and future adoption",
         students: 10,
         teachers: 2,
         duration: 3,
@@ -75,8 +75,8 @@ export const courses = [
     {
         title: "Web 2 vs Web 3",
         instructor: "Ola Aina  ",
-        intro:"lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        students: 10,
+        intro:"This course introduces the fundamental concepts of Blockchain technology and Web3., the concepts of web3, effects and future adoption",
+        student: 10,
         teachers: 2,
         duration: 3,
         illustration:illustration3,
