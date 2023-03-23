@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between container mx-auto">
         <div>
-          <a href="/"><img src={O3logo} alt="O3 finance school"/></a>
+          <a href="/"><img src={O3logo} className="h-8 md:h-auto" alt="O3 finance school"/></a>
         </div>
 
         {/* <!-- menu items --> */}

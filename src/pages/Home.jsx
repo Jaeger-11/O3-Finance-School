@@ -82,7 +82,7 @@ function Home() {
           transition={{duration: 0.5, type: 'tween'}}
           src={community} alt="communities illustration" className="flex-1"/>
           <motion.div
-
+          
           className="flex flex-col justify-center md:flex-1 gap-8">
             <a href="https://t.me/O3FinanceSchool" className="bg-white flex gap-8 p-4 mx-auto rounded-md shadow-md w-3/4">
               <img src={telegram} alt="telegram" />
