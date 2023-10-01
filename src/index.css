@@ -71,20 +71,25 @@ body{
 .hamburger-top, .hamburger-middle, .hamburger-bottom{
   width: 24px;
   height: 2px;
-  background-color: #002478;
+  background-color: #595959;
   position: absolute;
   top: 0;
   left: 0;
   transform: rotate(0);
   transition: all 0.5s;
 }
-
+.hamburger-top{
+  width: 18px;
+  left: 3px;
+}
 .hamburger-middle {
   transform: translateY(7px);
 }
 
 .hamburger-bottom {
 transform: translateY(14px);
+width: 18px;
+  left: 3px;
 }
 
 .open {
