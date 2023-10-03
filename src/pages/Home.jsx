@@ -24,15 +24,15 @@ function Home() {
           whileInView={{ opacity: 1, y:0}} 
           transition={{duration: 1, delay: 0.1, type: 'tween'}}
           className=" text-black md:text-left md:flex-[60%] ">
-            <h3 className="text-xl transition-all mb-2 md:text-4xl benzin-bold">
-              The Future of Work in Technology: <br /> Exhibition of Work
+            <h3 className="text-[32px] transition-all mb-2 md:text-4xl clash-semibold text-dark2">
+              The Future of Work in Technology: <br /> <span className="text-lightblue">Exhibition of Work</span> 
             </h3>
-            <p className="md:text-2xl benzin-regular">Calling all undergraduates, aspirants, and fresh graduates of Nigerian Tertiary Institutions!</p>
+            <p className="text-sm md:text-2xl jakarta w-2/3 mt-4 text-dark1">Calling all undergraduates, aspirants, and fresh graduates of Nigerian Tertiary Institutions!</p>
             <Link to='/about'>
               <motion.button 
               whileTap={{scale:0.9}}
               whileHover={{scale: 1.1}}
-              className="text-white bg-darkblue my-4 font-medium text-base py-2 px-4 md:text-lg">Register Now
+              className="text-white bg-lightblue rounded clash-semibold my-4 font-medium text-base py-2 px-4 md:text-lg">Register Now
               </motion.button>
             </Link>
           </motion.article>

@@ -1,30 +1,20 @@
-@font-face{
-  font-family: benzin-bold;
-  src: url(/src/fonts/benzin-bold.ttf);
+@font-face {
+  font-family: clash-semibold;
+  src: url(/src/fonts/ClashDisplay-Semibold.otf);
 }
-@font-face{
-  font-family: benzin-regular;
-  src: url(/src/fonts/benzin-regular.ttf);
-}
-@font-face{
-  font-family: benzin-medium;
-  src: url(/src/fonts/benzin-medium.ttf);
-}
-
 body{
   background-color: #FAFAFC;
 }
 
-.benzin-bold{
-  font-family: benzin-bold;
+*{
+  line-height: normal;
 }
-.benzin-regular{
-  font-family: benzin-regular;
+.clash-semibold{
+  font-family: clash-semibold;
 }
-.benzin-medium{
-  font-family: benzin-medium;
+.jakarta{
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
-
 .grad{
   background: linear-gradient(92.47deg, rgba(0, 36, 120, 0.15) 1.14%, rgba(0, 36, 120, 0.04) 68.83%);
   opacity: 0.7;

@@ -13,7 +13,7 @@ const Navbar = () => {
   }
 
   return (
-    <motion.nav className="font-alternate text-darkblue mx-auto p-4 md:p-0 md:pt-8 md:pb-4"
+    <motion.nav className="jakarta border-b border-lightblue text-darkblue mx-auto p-4 md:p-0 md:pt-8 md:pb-4"
     initial={{opacity:0,y:-50}}
     animate={{opacity:1,y:0}}
     transition={{duration:0.5}}

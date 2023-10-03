@@ -17,14 +17,12 @@ module.exports = {
         'desktop-update-bg': "url(/desktop-update-bg.png)"
       },
       colors: {
-        darkblue: "#002478",
-        sharpblue:"#4A0DFF",
-        lightblue:"#E6F3FF",
-        lightgreen:"#3ACF01",
-        offwhite: "#FAFAFC"
+        lightblue:"#0040FF",
+        dark1: "#434343",
+        dark2: "#3E3E3E",
       },
       fontFamily:{
-        alternate: ['Montserrat', 'sans-serif']
+        jakarta: ['Plus Jakarta Sans', 'sans-serif']
       }
     }
   },
