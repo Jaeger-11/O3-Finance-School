@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className='font-alternate text-darkblue mx-auto p-4 md:p-0 md:pt-8 md:pb-4'
+      className='font-alternate text-darkblue mx-auto p-4 md:p-0 md:pt-8 md:pb-4 border-b-2 border-blue-600'
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         {/* <!-- menu items --> */}
-        <div className='hidden md:flex gap-8 items-center'>
+        <div className='hidden md:flex gap-10 items-center'>
           <Link to='/' className='hover:font-bold font-medium transition-all'>
             Home
           </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
         </div>
 
         <div className='hidden md:block '>
-          <button className='py-2 px-3 transition-all bg-darkblue text-white rounded-lg hover:bg-darkblue md:mx-4'>
+          <button className='py-3 px-7 transition-all bg-blue-700 text-white rounded-full hover:bg-darkblue md:mx-4'>
             Register
           </button>
         </div>

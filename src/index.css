@@ -1,66 +1,70 @@
-@font-face{
+@font-face {
   font-family: benzin-bold;
   src: url(/src/fonts/benzin-bold.ttf);
 }
-@font-face{
+@font-face {
   font-family: benzin-regular;
   src: url(/src/fonts/benzin-regular.ttf);
 }
-@font-face{
+@font-face {
   font-family: benzin-medium;
   src: url(/src/fonts/benzin-medium.ttf);
 }
 
-body{
-  background-color: #FAFAFC;
+body {
+  background-color: #fafafc;
 }
 
-.benzin-bold{
+.benzin-bold {
   font-family: benzin-bold;
 }
-.benzin-regular{
+.benzin-regular {
   font-family: benzin-regular;
 }
-.benzin-medium{
+.benzin-medium {
   font-family: benzin-medium;
 }
 
-.grad{
-  background: linear-gradient(92.47deg, rgba(0, 36, 120, 0.15) 1.14%, rgba(0, 36, 120, 0.04) 68.83%);
+.grad {
+  background: linear-gradient(
+    92.47deg,
+    rgba(0, 36, 120, 0.15) 1.14%,
+    rgba(0, 36, 120, 0.04) 68.83%
+  );
   opacity: 0.7;
   box-shadow: 2px 2px 6px 7px rgba(0, 0, 0, 0.05);
 }
-.hero-image-box{
-  background-image: url(/src/assets/hero-ellipse.svg), url(/src/assets/circlehero.png), url(/src/assets/hero-small-ellipse.svg);
-  background-position: 100% 0%, 0% 100%, 95% 75% ;
+.hero-image-box {
+  background-image: url(/src/assets/hero-ellipse.svg),
+    url(/src/assets/circlehero.png), url(/src/assets/hero-small-ellipse.svg);
+  background-position: 100% 0%, 0% 100%, 95% 75%;
   background-repeat: no-repeat;
 }
-.hero-content-box{
+.hero-content-box {
   background: url(/src/assets/hero-distant-ellipse.svg) 90% 90% no-repeat;
   background-size: 50px;
 }
-.about-section{
+.about-section {
   background: url(/src/assets/aboutbgnew.png) right center no-repeat;
 }
-.shadow-update{
+.shadow-update {
   box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.25);
 }
-.update-section{
+/* .update-section{
   background-image: url(/src/assets/update-ellipse.png), url(/src/assets/update-ellipse.png) ;
   background-position: 20% 90%, 50% 15%;
   background-repeat: no-repeat;
   background-size: 100px, 35px;
-}
-.comm-section{
+} */
+.comm-section {
   background: url(/src/assets/community-ellipse.png) 115% top no-repeat;
 }
-
-.home{
+.home {
   background: url(/src/assets/about-bg.svg) -100px 20% no-repeat;
   background-size: 300px;
 }
- 
-.hamburger{
+
+.hamburger {
   width: 24px;
   height: 24px;
   transition: all 0.5s;
@@ -68,7 +72,9 @@ body{
   cursor: pointer;
 }
 
-.hamburger-top, .hamburger-middle, .hamburger-bottom{
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
   width: 24px;
   height: 2px;
   background-color: #002478;
@@ -84,45 +90,41 @@ body{
 }
 
 .hamburger-bottom {
-transform: translateY(14px);
+  transform: translateY(14px);
 }
 
 .open {
-transform: rotate(90deg);
-transform: translateY(0px);
+  transform: rotate(90deg);
+  transform: translateY(0px);
 }
 
 .open .hamburger-top {
-transform: rotate(45deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
 .open .hamburger-middle {
-display: none;
+  display: none;
 }
 
 .open .hamburger-bottom {
-transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-
-@media screen and (min-width:768px){
-  .hero-content-box{
+@media screen and (min-width: 768px) {
+  .hero-content-box {
     background: url(/src/assets/hero-distant-ellipse.svg) 30% 90% no-repeat;
     background-size: 70px;
   }
-  .about{
-    background: #E6F3FF url(/src/assets//about-desktop.png) 90% center no-repeat;
+  .about {
+    background: #e6f3ff url(/src/assets//about-desktop.png) 90% center no-repeat;
     background-size: 28%;
   }
-  .home{
+  .home {
     background: url(/src/assets/about-bg.svg) -200px 95vh no-repeat;
     background-size: 500px;
   }
 }
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
