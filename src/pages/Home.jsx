@@ -8,7 +8,9 @@ import { stats } from "../data";
 import community from "../assets/communities.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import Teacher from "../assets/Teacher.svg";
+import Student from "../assets/Student.svg";
+import Ellipse1 from "../assets/round-hero-mobile.svg";
 
 function Home() {
 
@@ -32,19 +34,30 @@ function Home() {
               <motion.button 
               whileTap={{scale:0.9}}
               whileHover={{scale: 1.1}}
-              className="text-white bg-lightblue rounded clash-semibold my-4 font-medium text-base py-2 px-4 md:text-lg">Register Now
+              className="text-white bg-lightblue rounded clash-semibold my-8 font-medium text-base py-2 px-4 md:text-lg">Register Now
               </motion.button>
             </Link>
           </motion.article>
         </section>
+        <motion.div
+          initial={{opacity:0, y:100}} 
+          whileInView={{ opacity: 1, y:0}} 
+          transition={{duration: 1, delay: 0.1, type: 'tween'}}
+          className="hero-images-cont">
+            <img src={Teacher} alt="" className="teacher-img"/>
+            <img src={Student} alt="" className="student-img"/>
+            <img src={Ellipse1} alt="" className="mobile-spiral"/>
+            <div className="green-abs">Become an innovator in the Tech Ecosystem</div>
+            <div className="blue-abs">Gain practical insights on how to leverage technology to build sustainable solutions</div>
+          </motion.div>
         </div>
       </main>
       {/* Dear Friend / Texts */}
       <article>
         <div>
-          <h2 className="text-center text-2xl font-bold">DEAR FRIEND</h2>
-          <p className="text-center px-4">
-          I want to let you in a little secret. On how to tap into the massive possibilities of Tech for Profits and Impact. <br /> Over the last few decades, technology has greatly increased its abilities and blown our minds
+          <h2 className="text-center text-3xl font-bold text-dark2 mb-2 font-jakarta">DEAR FRIEND</h2>
+          <p className="text-center px-4 font-jakarta text-base">
+          I want to let you in a little secret. On how to tap into the massive possibilities of Tech for Profits and Impact. <br /> <br /> Over the last few decades, technology has greatly increased its abilities and blown our minds
           </p>
         </div>
         <section>

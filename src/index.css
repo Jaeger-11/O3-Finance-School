@@ -81,7 +81,6 @@ transform: translateY(14px);
 width: 18px;
   left: 3px;
 }
-
 .open {
 transform: rotate(90deg);
 transform: translateY(0px);
@@ -97,6 +96,66 @@ display: none;
 
 .open .hamburger-bottom {
 transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+/* NEW STYLING */
+.hero-images-cont{
+  display: flex;
+  gap: 0;
+  position: relative;
+  margin-bottom: 10vh;
+}
+.hero-images-cont img{
+  width: 53%;
+}
+.student-img{
+  position: absolute;
+  right: 0;
+  bottom: -25%;
+}
+.mobile-spiral{
+  position: absolute;
+  right: 0;
+  width: 40% !important;
+  z-index: -1;
+  top: -60%;
+}
+.green-abs{
+  border-radius: 3.289px;
+  border: 0.822px solid var(--accentsuccess-success-70, #393);
+  background: rgba(34, 188, 238, 0.08);
+  backdrop-filter: blur(3.1560351848602295px);
+  color: #3E3E3E;
+  font-family: Plus Jakarta Sans;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 14.8px 27.133px 14.8px 8.222px;
+  width: max-content;
+  position: absolute;
+  height: max-content;
+  z-index: 2;
+  top: -15%;
+  right: 15%;
+}
+.blue-abs{
+  border-radius: 3.289px;
+  background: #001B6B;
+  position: absolute;
+  display: inline-flex;
+height: 41.111px;
+padding: 8.222px 16.444px 8.222px 12.331px;
+align-items: center;
+gap: 49.333px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Plus Jakarta Sans;
+font-size: 8px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; 
+width: 60%;
+right: 2%;
 }
 
 
