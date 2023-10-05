@@ -3,7 +3,7 @@
   src: url(/src/fonts/ClashDisplay-Semibold.otf);
 }
 body{
-  background-color: #FAFAFC;
+  background-color: white;
 }
 
 *{
@@ -12,44 +12,6 @@ body{
 .clash-semibold{
   font-family: clash-semibold;
 }
-.jakarta{
-  font-family: 'Plus Jakarta Sans', sans-serif;
-}
-.grad{
-  background: linear-gradient(92.47deg, rgba(0, 36, 120, 0.15) 1.14%, rgba(0, 36, 120, 0.04) 68.83%);
-  opacity: 0.7;
-  box-shadow: 2px 2px 6px 7px rgba(0, 0, 0, 0.05);
-}
-.hero-image-box{
-  background-image: url(/src/assets/hero-ellipse.svg), url(/src/assets/circlehero.png), url(/src/assets/hero-small-ellipse.svg);
-  background-position: 100% 0%, 0% 100%, 95% 75% ;
-  background-repeat: no-repeat;
-}
-.hero-content-box{
-  background: url(/src/assets/hero-distant-ellipse.svg) 90% 90% no-repeat;
-  background-size: 50px;
-}
-.about-section{
-  background: url(/src/assets/aboutbgnew.png) right center no-repeat;
-}
-.shadow-update{
-  box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.25);
-}
-.update-section{
-  background-image: url(/src/assets/update-ellipse.png), url(/src/assets/update-ellipse.png) ;
-  background-position: 20% 90%, 50% 15%;
-  background-repeat: no-repeat;
-  background-size: 100px, 35px;
-}
-.comm-section{
-  background: url(/src/assets/community-ellipse.png) 115% top no-repeat;
-}
-
-.home{
-  background: url(/src/assets/about-bg.svg) -100px 20% no-repeat;
-  background-size: 300px;
-}
- 
 .hamburger{
   width: 24px;
   height: 24px;
@@ -154,24 +116,13 @@ font-size: 8px;
 font-style: normal;
 font-weight: 500;
 line-height: 150%; 
-width: 60%;
+width: max-content;
 right: 2%;
 }
 
 
 @media screen and (min-width:768px){
-  .hero-content-box{
-    background: url(/src/assets/hero-distant-ellipse.svg) 30% 90% no-repeat;
-    background-size: 70px;
-  }
-  .about{
-    background: #E6F3FF url(/src/assets//about-desktop.png) 90% center no-repeat;
-    background-size: 28%;
-  }
-  .home{
-    background: url(/src/assets/about-bg.svg) -200px 95vh no-repeat;
-    background-size: 500px;
-  }
+  
 }
 
 

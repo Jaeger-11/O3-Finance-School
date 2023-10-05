@@ -29,7 +29,7 @@ function Home() {
             <h3 className="text-[32px] transition-all mb-2 md:text-4xl clash-semibold text-dark2">
               The Future of Work in Technology: <br /> <span className="text-lightblue">Exhibition of Work</span> 
             </h3>
-            <p className="text-sm md:text-2xl jakarta w-2/3 mt-4 text-dark1">Calling all undergraduates, aspirants, and fresh graduates of Nigerian Tertiary Institutions!</p>
+            <p className="text-sm md:text-2xl font-jakarta w-2/3 mt-4 text-dark1">Calling all undergraduates, aspirants, and fresh graduates of Nigerian Tertiary Institutions!</p>
             <Link to='/about'>
               <motion.button 
               whileTap={{scale:0.9}}
@@ -48,36 +48,72 @@ function Home() {
             <img src={Student} alt="" className="student-img"/>
             <img src={Ellipse1} alt="" className="mobile-spiral"/>
             <div className="green-abs">Become an innovator in the Tech Ecosystem</div>
-            <div className="blue-abs">Gain practical insights on how to leverage technology to build sustainable solutions</div>
+            <div className="blue-abs">Gain practical insights on how to leverage <br /> technology to build sustainable solutions</div>
           </motion.div>
         </div>
       </main>
       {/* Dear Friend / Texts */}
       <article>
         <div>
-          <h2 className="text-center text-3xl font-bold text-dark2 mb-2 font-jakarta">DEAR FRIEND</h2>
+          <h2 className="text-center text-3xl font-bold text-dark2 font-jakarta my-4">DEAR FRIEND</h2>
           <p className="text-center px-4 font-jakarta text-base">
-          I want to let you in a little secret. On how to tap into the massive possibilities of Tech for Profits and Impact. <br /> <br /> Over the last few decades, technology has greatly increased its abilities and blown our minds
+          I want to let you in a little secret. On how to tap into the massive possibilities of Tech for Profits and Impact. <br /> Over the last few decades, technology has greatly increased its abilities and blown our minds
           </p>
         </div>
         <section>
           {/* VIDEO AND SUBTEXT */}
         </section>
-        <div>
-          <p className="my-4 p-4">And now, we are fully transitioning into a tech economy. You see, there are two categories of people in the tech ecosystem. </p>
-          <ul>
+        <div className="font-jakarta text-sm px-4">
+          <p className="my-4 py-4">And now, we are fully transitioning into a tech economy. You see, there are two categories of people in the tech ecosystem. </p>
+          <ul className="list-disc mx-4 mb-4">
             <li>The few elites who “own” the tech ecosystem - the tech gurus, bros, and sis’</li>
             <li>The masses who mind their “business” leaving the tech ecosystem to the gurus.</li>
           </ul>
           <p>I was once in the second category, probably like you are right now, Unfortunately, that doesn’t work in this tech economy. Whether or not you decide to be involved, Tech affects everything you do.</p>
-        </div>
-        {/* DASH */}
-        <div>
-          <p>But, Good news! Tech is not just about the digital skills you can think of. There’s more!</p>
-          <p>Where Tech Meets any career - Law, Accounting, Chemistry, Agriculture. There are endless possibilities for innovation.</p>
-          <p>Tech is already changing the narrative in every career. And YOU must be at the edge of this change to maximize these possibilities.</p>
+          <p className="my-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
+              <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </p>
+          <p className="my-4">But, Good news! Tech is not just about the digital skills you can think of. There’s more!</p>
+          <p className="my-4">Where Tech meets any career - Law, Accounting, Chemistry, Agriculture. There are endless possibilities for innovation.</p>
+          <p className="my-4">Tech is already changing the narrative in every career. And YOU must be at the edge of this change to maximize these possibilities.</p>
         </div>
       </article>
+      {/* ABOUT EVENT */}
+      <div className="m-4 text-black font-jakarta">
+          <span  className="text-xs">Learn</span>
+          <h2 className="font-semibold text-base">ABOUT EVENT</h2>
+          <p className="my-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
+              <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </p>
+          <div className="text-sm">
+            <p className="my-4">In the wave of rapid tech advancements such as AI and Machine Learning, you must have wondered…</p>
+            <p className="my-4">What do I do with my career in this advanced digital economy? <br /> What does the future of work hold?</p>
+            <p className="my-4">Is AI coming for our jobs? <br />
+                Will Tech Replace more traditional jobs? <br />
+                There’s no cause for panic. <br />
+                And you don’t need to take these words just for it.
+            </p>
+            <p className="my-4">
+            Because we’ll be taking you by the hands to show you everything you need to know about the tech ecosystem including how you can leverage the rapid advancements to be positioned like the Elites in your field of work. <br /> Don’t wait till the last minute, Get in now!
+            </p>
+          </div>
+          <h3 className="my-6 text-base text-[#0B0B0B] flex items-center gap-4">Book Space  
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
+            <path d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z" fill="black"/>
+          </svg>
+          </h3>
+        </div>
+        {/* EVENT DATE AND COUNTDOWN */}
+        <section className="bg-[#002478] text-white">
+          <div>
+            <p>Date</p>
+            <h4>28th September 2023</h4>
+          </div>
+        </section>
       {/* SPEAKERS */}
       <section></section>
       {/* PARTICIPATING SCHOOLS */}
