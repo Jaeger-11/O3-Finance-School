@@ -11,8 +11,32 @@ import { motion } from "framer-motion";
 import Teacher from "../assets/Teacher.svg";
 import Student from "../assets/Student.svg";
 import Ellipse1 from "../assets/round-hero-mobile.svg";
+import Profile from "../assets/profile.jpg";
+import Profile2 from "../assets/profile2.png";
 
 function Home() {
+  let speakers = [
+    {
+      name: "micheal jerry",
+      position: "CEO, Africall",
+      profile: Profile
+    },
+    {
+      name: "micheal jerry",
+      position: "CEO, Africall",
+      profile: Profile2
+    },
+    {
+      name: "micheal jerry",
+      position: "CEO, Africall",
+      profile: Profile2
+    },
+    {
+      name: "micheal jerry",
+      position: "CEO, Africall",
+      profile: Profile
+    },
+  ]
 
   return (
     <div className='home '>
@@ -51,12 +75,15 @@ function Home() {
             <div className="blue-abs">Gain practical insights on how to leverage <br /> technology to build sustainable solutions</div>
           </motion.div>
         </div>
+        <section className="text-white font-[500] bg-[#001B6B] h-[54px] partners font-jakarta text-xs">
+          <div className="meet-partners">Meet our &nbsp; <span className="font-semibold">PARTNERS</span></div>
+        </section>
       </main>
       {/* Dear Friend / Texts */}
       <article>
         <div>
           <h2 className="text-center text-3xl font-bold text-dark2 font-jakarta my-4">DEAR FRIEND</h2>
-          <p className="text-center px-4 font-jakarta text-base">
+          <p className="text-center px-6 font-jakarta text-base">
           I want to let you in a little secret. On how to tap into the massive possibilities of Tech for Profits and Impact. <br /> Over the last few decades, technology has greatly increased its abilities and blown our minds
           </p>
         </div>
@@ -101,23 +128,61 @@ function Home() {
             Because we’ll be taking you by the hands to show you everything you need to know about the tech ecosystem including how you can leverage the rapid advancements to be positioned like the Elites in your field of work. <br /> Don’t wait till the last minute, Get in now!
             </p>
           </div>
-          <h3 className="my-6 text-base text-[#0B0B0B] flex items-center gap-4">Book Space  
+          <h3 className="my-6 text-base text-[#0B0B0B] flex items-center gap-4 font-[500]">Book Space  
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
             <path d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z" fill="black"/>
           </svg>
           </h3>
         </div>
         {/* EVENT DATE AND COUNTDOWN */}
-        <section className="bg-[#002478] text-white">
-          <div>
-            <p>Date</p>
+        <section className="bg-[#002478] text-white p-6 text-center font-jakarta">
+          <div className="my-6">
+            <p className="text-xs font-[300]">Date</p>
             <h4>28th September 2023</h4>
           </div>
+          <div className="my-6">
+            <p className="text-xs font-[300]">Time</p>
+            <h4>08:00 pm daily</h4>
+          </div>
+          <section className="my-6 border border-white-100 p-4 flex justify-evenly font-bold text-base rounded-3xl">
+            <div><span>29</span><br /> DAYS</div>
+            <div><span>20</span><br /> HOURS</div>
+            <div><span>20</span><br /> MINUTES</div>
+          </section>
         </section>
       {/* SPEAKERS */}
-      <section></section>
+      <section className="mx-4 my-6 text-black font-jakarta">
+        <span  className="text-xs">Meet</span>
+        <h2 className="font-semibold text-base">OUR SPEAKERS</h2>
+        <p className="my-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
+              <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </p>
+        <section className="speakers">
+          {speakers.map((speaker) => {
+            const {profile, name, position} = speaker
+            return (
+            <div className="speaker">
+              <img src={profile} alt="" />
+              <div className="profile text-white font-jakarta text-center">
+                <h4 className="capitalize text-base font-bold">{name}</h4>
+                <p className="uppercase text-[10px]">{position}</p>
+              </div>
+            </div>
+            )
+          })}
+        </section>
+      </section>
       {/* PARTICIPATING SCHOOLS */}
-      <section></section>
+      <section className="mx-4 my-8 text-black font-jakarta">
+        <h2 className="font-semibold text-base">PARTICIPATING SCHOOLS</h2>
+        <p className="my-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
+              <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </p>
+      </section>
       {/* EVENTS */}
       <section></section>
       {/* Join Community Section */}

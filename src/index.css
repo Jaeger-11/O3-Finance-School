@@ -64,7 +64,7 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   display: flex;
   gap: 0;
   position: relative;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
 }
 .hero-images-cont img{
   width: 53%;
@@ -73,6 +73,7 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   position: absolute;
   right: 0;
   bottom: -25%;
+  z-index: -1;
 }
 .mobile-spiral{
   position: absolute;
@@ -119,8 +120,40 @@ line-height: 150%;
 width: max-content;
 right: 2%;
 }
-
-
+.partners{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.meet-partners{
+  border: 0.5px solid #FFF;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding:0 1rem;
+}
+.speakers{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3vw;
+  padding-top: 10px;
+}
+.speaker{
+  position: relative;
+  border-radius: 5vw;
+  overflow: hidden;
+  aspect-ratio: 150/258;
+}
+.speaker img{
+  height: 100%;
+  width: 100%;
+}
+.profile{
+  position: absolute;
+  z-index: 2;
+  bottom: 10%;
+  width: 100%;
+}
 @media screen and (min-width:768px){
   
 }
