@@ -1,6 +1,10 @@
 import heroImage from "../assets/heroimagenew.png";
 import discord from "../assets/discord.svg";
 import telegram from "../assets/telegram.svg";
+import twitter from "../assets/twitter.png";
+import linkedin from "../assets/linkedin.svg";
+import facebook from "../assets/facebook.svg"
+import instagram from "../assets/instagram.svg"
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import CoursesHome from "../components/CoursesHome";
@@ -13,6 +17,11 @@ import Student from "../assets/Student.svg";
 import Ellipse1 from "../assets/round-hero-mobile.svg";
 import Profile from "../assets/profile.jpg";
 import Profile2 from "../assets/profile2.png";
+import Gallery1 from "../assets/gallery1.png";
+import Gallery2 from "../assets/gallery2.png";
+import Gallery3 from "../assets/gallery3.png";
+import Gallery4 from "../assets/gallery4.png";
+import Gallerybig from "../assets/gallerybig.png";
 
 function Home() {
   let speakers = [
@@ -25,6 +34,16 @@ function Home() {
       name: "micheal jerry",
       position: "CEO, Africall",
       profile: Profile2
+    },
+    {
+      name: "micheal jerry",
+      position: "CEO, Africall",
+      profile: Profile2
+    },
+    {
+      name: "micheal jerry",
+      position: "CEO, Africall",
+      profile: Profile
     },
     {
       name: "micheal jerry",
@@ -151,15 +170,26 @@ function Home() {
           </section>
         </section>
       {/* SPEAKERS */}
-      <section className="mx-4 my-6 text-black font-jakarta">
+      <section className="mx-4 my-6 text-black font-jakarta relative">
+        <svg width="326" className="blob" height="546" viewBox="0 0 326 546" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M273 546C423.774 546 546 423.774 546 273C546 122.226 423.774 0 273 0C122.226 0 0 122.226 0 273C0 423.774 122.226 546 273 546Z" fill="url(#paint0_linear_234_1035)" fill-opacity="0.7"/>
+          <defs>
+          <linearGradient id="paint0_linear_234_1035" x1="68.0015" y1="-19.7466" x2="313.257" y2="457.488" gradientUnits="userSpaceOnUse">
+          <stop offset="0.236345" stop-color="#B0C4FF"/>
+          <stop offset="0.577601" stop-color="#F99898"/>
+          <stop offset="0.776042" stop-color="#B0BBD5"/>
+          <stop offset="1" stop-color="#003AE8"/>
+          </linearGradient>
+          </defs>
+        </svg>
         <span  className="text-xs">Meet</span>
         <h2 className="font-semibold text-base">OUR SPEAKERS</h2>
-        <p className="my-2">
+        <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </p>
-        <section className="speakers">
+        <section className="speakers mt-4">
           {speakers.map((speaker) => {
             const {profile, name, position} = speaker
             return (
@@ -177,40 +207,54 @@ function Home() {
       {/* PARTICIPATING SCHOOLS */}
       <section className="mx-4 my-8 text-black font-jakarta">
         <h2 className="font-semibold text-base">PARTICIPATING SCHOOLS</h2>
-        <p className="my-2">
+        <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </p>
       </section>
       {/* EVENTS */}
-      <section></section>
-      {/* Join Community Section */}
-      <section className=" comm-section">
-        <div className="container mx-auto py-6 benzin-bold">
-        <h3 className="text-center text-lg md:text-2xl">Join Our Communities</h3>
-        <div className="flex flex-col gap-6 md:flex-row">
-          <motion.img
-          initial={{x: -200}}
-          whileInView={{x:0}} 
-          transition={{duration: 0.5, type: 'tween'}}
-          src={community} alt="communities illustration" className="flex-1"/>
-          <motion.div
-          
-          className="flex flex-col justify-center md:flex-1 gap-8">
-            <a href="https://t.me/O3FinanceSchool" className="bg-white flex gap-8 p-4 mx-auto rounded-md shadow-md w-3/4">
-              <img src={telegram} alt="telegram" />
-              <p >Telegram channel</p>
-            </a>
-            <a href="https://discord.gg/42smDNtS" className="bg-white flex gap-8 p-4 mx-auto rounded-md shadow-md w-3/4">
-              <img src={discord} alt="discord" />
-              <p >Discord channel</p>
-            </a>
-          </motion.div>
-        </div>
-        </div>
+      <section className="mx-4 my-8 text-black font-jakarta">
+        <span  className="text-xs">Event Gallery</span>
+        <h2 className="font-semibold text-base">O3 EVENTS IN GALLERY</h2>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
+              <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </p>
+        <section className="gallery mt-4">
+          <div>
+            <img src={Gallerybig} alt="" />
+          </div>
+          <div className="small-gallery">
+            <img src={Gallery4} alt="" />
+            <img src={Gallery3} alt="" />
+            <img src={Gallery1} alt="" />
+            <img src={Gallery2} alt="" />
+          </div>
+        </section>
       </section>
-      <Footer/>
+
+      {/* Join Community Section */}
+      <section className="px-4 py-8 text-black font-jakarta bg-[#F99898]">
+        <span  className="text-xs">Stay Updated</span>
+        <h2 className="font-semibold text-base">JOIN OUR COMMUNITIES</h2>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
+              <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </p>
+        <section className="mt-4 community-section">
+          <p className="text-xs">Join the Community to be a part of the TIPS Conversation - The FOW Weekly Series on Web1, Web2, and Web3 Concepts, Versus Technology.</p>
+          <div className="links">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="" /></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="" /></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" /></a>
+            <a href="http://a" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="" /></a>
+          </div>
+        </section>
+      </section>
+      {/* <Footer/> */}
     </div>
   )
 }
