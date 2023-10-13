@@ -18,23 +18,26 @@ const Navbar = () => {
     animate={{opacity:1,y:0}}
     transition={{duration:0.5}}
     >
-      <div className="flex items-center justify-between container mx-auto">
+      <div className="flex items-center justify-between md:mx-[5vw]">
         <div>
           <a href="/"><img src={O3logo} className="h-8 md:h-auto" alt="O3 finance school"/></a>
         </div>
 
         {/* <!-- menu items --> */}
-        <div className="hidden md:flex gap-8 items-center">
+        <div className="hidden md:flex gap-8 items-center text-base text-dark1 font-jakarta">
           <Link to="/" className="hover:font-bold font-medium transition-all">Home</Link>
-          <Link to="/about" className="hover:font-bold font-medium transition-all">About</Link>
+          <Link to="/" className="hover:font-bold font-medium transition-all">Partners</Link>
+          <Link to="/" className="hover:font-bold font-medium transition-all">Community</Link>
+          {/* <Link to="/about" className="hover:font-bold font-medium transition-all">About</Link>
           <Link to="/courses" className="hover:font-bold font-medium transition-all">Courses</Link>
           <Link to="/contact" className="hover:font-bold font-medium transition-all">Contact</Link>
-          <Link to="/events" className="hover:font-bold font-medium transition-all">Events</Link>
+          <Link to="/events" className="hover:font-bold font-medium transition-all">Events</Link> */}
         </div>
 
-        <div className='hidden md:block border-l border-opacity-50 border-darkblue'>
-          <button className='py-2 px-3 transition-all border border-darkblue text-darkblue hover:text-white hover:bg-darkblue md:mx-4'>Sign up</button>
-          <button className='py-2 px-4 transition-all bg-darkblue text-white hover:bg-white hover:text-darkblue hover:border hover:border-darkblue'>Login</button>
+        <div className='hidden font-jakarta md:block border-l border-opacity-50 border-darkblue'>
+          <button className='bg-lightblue text-white py-2 px-8 text-base font-medium rounded-full'>Register</button>
+          {/* <button className='py-2 px-3 transition-all border border-darkblue text-darkblue hover:text-white hover:bg-darkblue md:mx-4'>Sign up</button>
+          <button className='py-2 px-4 transition-all bg-darkblue text-white hover:bg-white hover:text-darkblue hover:border hover:border-darkblue'>Login</button> */}
         </div>
 
         {/* <!-- Hamburger Icon --> */}

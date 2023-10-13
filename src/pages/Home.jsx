@@ -15,77 +15,45 @@ import { motion } from "framer-motion";
 import Teacher from "../assets/Teacher.svg";
 import Student from "../assets/Student.svg";
 import Ellipse1 from "../assets/round-hero-mobile.svg";
-import Profile from "../assets/profile.jpg";
-import Profile2 from "../assets/profile2.png";
 import Gallery1 from "../assets/gallery1.png";
 import Gallery2 from "../assets/gallery2.png";
 import Gallery3 from "../assets/gallery3.png";
 import Gallery4 from "../assets/gallery4.png";
 import Gallerybig from "../assets/gallerybig.png";
+import SchoolsCarousel from "../components/SchoolCarousel";
+import Speakers from "../components/Speakers";
 
 function Home() {
-  let speakers = [
-    {
-      name: "micheal jerry",
-      position: "CEO, Africall",
-      profile: Profile
-    },
-    {
-      name: "micheal jerry",
-      position: "CEO, Africall",
-      profile: Profile2
-    },
-    {
-      name: "micheal jerry",
-      position: "CEO, Africall",
-      profile: Profile2
-    },
-    {
-      name: "micheal jerry",
-      position: "CEO, Africall",
-      profile: Profile
-    },
-    {
-      name: "micheal jerry",
-      position: "CEO, Africall",
-      profile: Profile2
-    },
-    {
-      name: "micheal jerry",
-      position: "CEO, Africall",
-      profile: Profile
-    },
-  ]
 
   return (
     <div className='home '>
       {/* hero section */}
       <main >
         <Navbar/>
-        <div className='container mx-auto'>
+        <div className=' md:px-[5vw]'>
         <section className='flex flex-col gap-6 px-4 py-8 hero-content-box md:px-0 md:pb-12 md:flex-row-reverse md:justify-center md:items-center'>
           <motion.article 
-          initial={{opacity:0, y:100}} 
-          whileInView={{ opacity: 1, y:0}} 
-          transition={{duration: 1, delay: 0.1, type: 'tween'}}
+          // initial={{opacity:0, y:100}} 
+          // whileInView={{ opacity: 1, y:0}} 
+          // transition={{duration: 1, delay: 0.1, type: 'tween'}}
           className=" text-black md:text-left md:flex-[60%] ">
             <h3 className="text-[32px] transition-all mb-2 md:text-4xl clash-semibold text-dark2">
               The Future of Work in Technology: <br /> <span className="text-lightblue">Exhibition of Work</span> 
             </h3>
-            <p className="text-sm md:text-2xl font-jakarta w-2/3 mt-4 text-dark1">Calling all undergraduates, aspirants, and fresh graduates of Nigerian Tertiary Institutions!</p>
-            <Link to='/about'>
+            <p className="text-sm md:text-xl md:w-1/2 font-jakarta w-2/3 mt-4 text-dark1">Calling all undergraduates, aspirants, and fresh graduates of Nigerian Tertiary Institutions!</p>
+            <a href='https://bit.ly/FOWO3FS'>
               <motion.button 
               whileTap={{scale:0.9}}
               whileHover={{scale: 1.1}}
               className="text-white bg-lightblue rounded clash-semibold my-8 font-medium text-base py-2 px-4 md:text-lg">Register Now
               </motion.button>
-            </Link>
+            </a>
           </motion.article>
         </section>
         <motion.div
-          initial={{opacity:0, y:100}} 
-          whileInView={{ opacity: 1, y:0}} 
-          transition={{duration: 1, delay: 0.1, type: 'tween'}}
+          // initial={{opacity:0, x:100}} 
+          // whileInView={{ opacity: 1, x:0}} 
+          // transition={{duration: 1, delay: 0.1, type: 'tween'}}
           className="hero-images-cont">
             <img src={Teacher} alt="" className="teacher-img"/>
             <img src={Student} alt="" className="student-img"/>
@@ -102,14 +70,14 @@ function Home() {
       <article>
         <div>
           <h2 className="text-center text-3xl font-bold text-dark2 font-jakarta my-4">DEAR FRIEND</h2>
-          <p className="text-center px-6 font-jakarta text-base">
-          I want to let you in a little secret. On how to tap into the massive possibilities of Tech for Profits and Impact. <br /> Over the last few decades, technology has greatly increased its abilities and blown our minds
+          <p className="text-center px-6 font-jakarta text-base md:text-xl">
+          I want to let you in a little secret. <br /> On how to tap into the massive possibilities of Tech for Profits and Impact. <br /> Over the last few decades, technology has greatly increased its abilities and blown our minds
           </p>
         </div>
         <section>
           {/* VIDEO AND SUBTEXT */}
         </section>
-        <div className="font-jakarta text-sm px-4">
+        <div className="font-jakarta text-sm px-4 md:text-xl md:w-[65%] mx-auto">
           <p className="my-4 py-4">And now, we are fully transitioning into a tech economy. You see, there are two categories of people in the tech ecosystem. </p>
           <ul className="list-disc mx-4 mb-4">
             <li>The few elites who “own” the tech ecosystem - the tech gurus, bros, and sis’</li>
@@ -127,7 +95,7 @@ function Home() {
         </div>
       </article>
       {/* ABOUT EVENT */}
-      <div className="m-4 text-black font-jakarta">
+      <div className="m-4 text-black font-jakarta md:mx-[5vw]">
           <span  className="text-xs">Learn</span>
           <h2 className="font-semibold text-base">ABOUT EVENT</h2>
           <p className="my-2">
@@ -135,7 +103,7 @@ function Home() {
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </p>
-          <div className="text-sm">
+          <div className="text-sm md:text-xl">
             <p className="my-4">In the wave of rapid tech advancements such as AI and Machine Learning, you must have wondered…</p>
             <p className="my-4">What do I do with my career in this advanced digital economy? <br /> What does the future of work hold?</p>
             <p className="my-4">Is AI coming for our jobs? <br />
@@ -157,7 +125,7 @@ function Home() {
         <section className="bg-[#002478] text-white p-6 text-center font-jakarta">
           <div className="my-6">
             <p className="text-xs font-[300]">Date</p>
-            <h4>28th September 2023</h4>
+            <h4>30th October - 10th November, <br /> 2023</h4>
           </div>
           <div className="my-6">
             <p className="text-xs font-[300]">Time</p>
@@ -189,20 +157,7 @@ function Home() {
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </p>
-        <section className="speakers mt-4">
-          {speakers.map((speaker) => {
-            const {profile, name, position} = speaker
-            return (
-            <div className="speaker">
-              <img src={profile} alt="" />
-              <div className="profile text-white font-jakarta text-center">
-                <h4 className="capitalize text-base font-bold">{name}</h4>
-                <p className="uppercase text-[10px]">{position}</p>
-              </div>
-            </div>
-            )
-          })}
-        </section>
+        <Speakers/>
       </section>
       {/* PARTICIPATING SCHOOLS */}
       <section className="mx-4 my-8 text-black font-jakarta">
@@ -212,6 +167,9 @@ function Home() {
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </p>
+        <section>
+          <SchoolsCarousel/>
+        </section>
       </section>
       {/* EVENTS */}
       <section className="mx-4 my-8 text-black font-jakarta">
@@ -247,10 +205,10 @@ function Home() {
         <section className="mt-4 community-section">
           <p className="text-xs">Join the Community to be a part of the TIPS Conversation - The FOW Weekly Series on Web1, Web2, and Web3 Concepts, Versus Technology.</p>
           <div className="links">
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="" /></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="" /></a>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" /></a>
-            <a href="http://a" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="" /></a>
+            <a href="https://x.com/o3financeschool" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="" /></a>
+            <a href="https://www.facebook.com/03financeschool" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="" /></a>
+            <a href="https://www.linkedin.com/company/o3-finance-school/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" /></a>
+            <a href="https://instagram.com/o3financeschool" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="" /></a>
           </div>
         </section>
       </section>

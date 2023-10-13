@@ -4,6 +4,8 @@
 }
 body{
   background-color: white;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 *{
@@ -79,7 +81,7 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   position: absolute;
   right: 0;
   width: 40% !important;
-  z-index: -1;
+  z-index: -2;
   top: -60%;
 }
 .green-abs{
@@ -152,14 +154,17 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   aspect-ratio: 150/258;
 }
 .speaker img{
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
 .profile{
+  background: rgba(0, 0, 0, 0.15);
   position: absolute;
   z-index: 2;
   bottom: 10%;
   width: 100%;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 .gallery{
   display: flex;
@@ -185,6 +190,39 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   gap: 5vw;
   /* flex: auto; */
 }
+/* .school-carousel{
+  display: grid;
+  grid-template-columns: repeat();
+  grid-template-columns: repeat(6, minmax(15.625vw, 1fr));
+  display: flex;
+  margin-top: 1rem;
+  gap: 7.5vw;
+  width: 100%;
+  overflow: scroll;
+} */
+.school-carousel{
+  width: 100vw;
+  margin-top: 1rem;
+}
+.school-carousel img{
+  width: 15.625vw;
+  aspect-ratio: 50/56;
+  /* display: block; */
+  /* animation: moving 5s infinite linear; */
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(0, 0)
+  }
+  50% {
+    transform: translate(-450px, 0)
+  }
+  100% {
+    transform: translate(-900px, 0)
+  }
+}
+
 @media screen and (min-width:768px){
   
 }
