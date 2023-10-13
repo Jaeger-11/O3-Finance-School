@@ -2,38 +2,39 @@ import Profile from "../assets/profile.jpg";
 import Profile2 from "../assets/profile2.png";
 import oswald from "../assets/speakers/oswald-speaker.jpg";
 import ihenyen from "../assets/speakers/speaker-ihenyen.jpg";
-import stanley from "../assets/speakers/speaker-stanley.jpg"
+import stanley from "../assets/speakers/speaker-stanley.jpg";
+import eyitayo from "../assets/speakers/eyitayo.jpg"
 let speakers = [
     {
       name: "Oswald Osaretin",
-      position: "CEO, Africall",
+      position: "MANAGING PARTNER, DigitA",
       profile: oswald
     },
     {
       name: "Senator Ihenyen",
-      position: "Lead Partner, Infusion Lawyers",
+      position: "LEAD PARTNER, INFUSION LAWYERS",
       profile: ihenyen
     },
     {
       name: "Golomo Stanley",
-      position: "Co-founder/CEO of Farmchain Finance & Rotacash",
+      position: "CO-FOUNDER/CEO OF FARMCHAIN FINANCE & ROTACASH",
       profile: stanley
     },
    {
-      name: "Oswald Osaretin",
-      position: "CEO, Africall",
-      profile: oswald
+      name: "Eyitayo Ogunmola",
+      position: "FOUNDER/CEO, UTIVA",
+      profile: eyitayo
     },
-    {
-      name: "Senator Ihenyen",
-      position: "Lead Partner, Infusion Lawyers",
-      profile: ihenyen
-    },
-    {
-      name: "Golomo Stanley",
-      position: "Co-founder/CEO of Farmchain Finance & Rotacash",
-      profile: stanley
-    },
+//     {
+//       name: "Senator Ihenyen",
+//       position: "Lead Partner, Infusion Lawyers",
+//       profile: ihenyen
+//     },
+//     {
+//       name: "Golomo Stanley",
+//       position: "Co-founder/CEO of Farmchain Finance & Rotacash",
+//       profile: stanley
+//     },
 ]
 
 const Speakers = () => {
@@ -46,7 +47,7 @@ const Speakers = () => {
               <img src={profile} alt="" />
               <div className="profile text-white font-jakarta text-center">
                 <h4 className="capitalize text-base font-bold">{name}</h4>
-                <p className="uppercase text-[10px]">{position}</p>
+                <p className=" text-[10px]">{position}</p>
               </div>
             </div>
             )

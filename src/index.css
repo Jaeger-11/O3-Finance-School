@@ -190,16 +190,16 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   gap: 5vw;
   /* flex: auto; */
 }
-/* .school-carousel{
-  display: grid;
+.school-carousel{
+  /* display: grid;
   grid-template-columns: repeat();
-  grid-template-columns: repeat(6, minmax(15.625vw, 1fr));
+  grid-template-columns: repeat(6, minmax(15.625vw, 1fr)); */
   display: flex;
   margin-top: 1rem;
   gap: 7.5vw;
   width: 100%;
   overflow: scroll;
-} */
+}
 .school-carousel{
   width: 100vw;
   margin-top: 1rem;
