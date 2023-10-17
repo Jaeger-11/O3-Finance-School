@@ -16,16 +16,16 @@ import LASU from "../assets/schools/LASU.png";
 const SchoolsCarousel = () => {
     return (
         <div className="school-carousel">
-            <img src={AKSU} alt="AKSU" />
+            {/* <img src={AKSU} alt="AKSU" />
             <img src={OAU} alt="OAU" />
             <img src={FUTMINNA} alt="FUTMINNA" />
             <img src={UI} alt="UI" />
             <img src={UNN} alt="UNN" />
             <img src={UNIUYO} alt="UNIUYO" />
             <img src={YABATECH} alt="YABATECH" />
-            <img src={UNIZIK} alt="UNIZIK" />
+            <img src={UNIZIK} alt="UNIZIK" /> */}
             {/* <img src={LASU} alt="LASU" /> */}
-            <img src={FUL} alt="FUL" />
+            {/* <img src={FUL} alt="FUL" /> */}
             {/* <img src={KWARAPOLY} alt="KWARAPOLY" /> */}
             {/* <img src={POLYIBADAN} alt="POLYIBADAN" /> */}
             {/* <img src={OSU} alt="OSU" /> */}

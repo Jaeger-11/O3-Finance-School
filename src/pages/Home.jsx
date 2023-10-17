@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import Teacher from "../assets/Teacher.svg";
 import Student from "../assets/Student.svg";
 import Ellipse1 from "../assets/round-hero-mobile.svg";
+import rounddesktop from "../assets/round-desktop.svg";
 import Gallery1 from "../assets/gallery1.png";
 import Gallery2 from "../assets/gallery2.png";
 import Gallery3 from "../assets/gallery3.png";
@@ -26,43 +27,50 @@ import Speakers from "../components/Speakers";
 function Home() {
 
   return (
-    <div className='home '>
+    <div className='home font-jakarta'>
       {/* hero section */}
       <main >
         <Navbar/>
-        <div className=' md:px-[5vw]'>
-        <section className='flex flex-col gap-6 px-4 py-8 hero-content-box md:px-0 md:pb-12 md:flex-row-reverse md:justify-center md:items-center'>
-          <motion.article 
-          // initial={{opacity:0, y:100}} 
-          // whileInView={{ opacity: 1, y:0}} 
-          // transition={{duration: 1, delay: 0.1, type: 'tween'}}
-          className=" text-black md:text-left md:flex-[60%] ">
-            <h3 className="text-[32px] transition-all mb-2 md:text-4xl clash-semibold text-dark2">
-              The Future of Work in Technology: <br /> <span className="text-lightblue">Exhibition of Work</span> 
-            </h3>
-            <p className="text-sm md:text-xl md:w-1/2 font-jakarta w-2/3 mt-4 text-dark1">Calling all undergraduates, aspirants, and fresh graduates of Nigerian Tertiary Institutions!</p>
-            <a href='https://bit.ly/FOWO3FS'>
-              <motion.button 
-              whileTap={{scale:0.9}}
-              whileHover={{scale: 1.1}}
-              className="text-white bg-lightblue rounded clash-semibold my-8 font-medium text-base py-2 px-4 md:text-lg">Register Now
-              </motion.button>
-            </a>
-          </motion.article>
-        </section>
-        <motion.div
-          // initial={{opacity:0, x:100}} 
-          // whileInView={{ opacity: 1, x:0}} 
-          // transition={{duration: 1, delay: 0.1, type: 'tween'}}
-          className="hero-images-cont">
-            <img src={Teacher} alt="" className="teacher-img"/>
-            <img src={Student} alt="" className="student-img"/>
-            <img src={Ellipse1} alt="" className="mobile-spiral"/>
-            <div className="green-abs">Become an innovator in the Tech Ecosystem</div>
-            <div className="blue-abs">Gain practical insights on how to leverage <br /> technology to build sustainable solutions</div>
-          </motion.div>
+        <div className=' md:px-[5vw] md:mt-6 relative'>
+          <section className='flex flex-col gap-6 px-4 py-8 md:px-0 md:pb-12'>
+            <motion.article 
+            // initial={{opacity:0, y:100}} 
+            // whileInView={{ opacity: 1, y:0}} 
+            // transition={{duration: 1, delay: 0.1, type: 'tween'}}
+            className=" text-black md:text-left ">
+              <h3 className="text-[32px] transition-all mb-2 md:text-4xl clash-semibold text-dark2">
+                The Future of Work in Technology: <br /> <span className="text-lightblue">Exhibition of Work</span> 
+              </h3>
+              <p className="text-sm md:text-xl md:w-1/2 font-jakarta w-2/3 mt-4 text-dark1 md:font-medium md:mt-8">Calling all undergraduates, aspirants, and fresh graduates of Nigerian Tertiary Institutions!</p>
+              <div className="abs-cont hidden md:block">
+                <div className="blue-abs-md">Gain practical insights on how to leverage <br /> technology to build sustainable solutions</div>
+                <div className="green-abs-md">Become an Innovator in the Tech Ecosystem</div>
+              </div>
+              <a href='https://bit.ly/FOWO3FS'>
+                <motion.button 
+                whileTap={{scale:0.9}}
+                whileHover={{scale: 1.1}}
+                className="text-white bg-lightblue rounded clash-semibold my-8 font-medium text-base py-2 px-4 md:py-4 md:px-6 md:text-lg">Register Now
+                </motion.button>
+              </a>
+            </motion.article>
+          </section>
+          <div className="relative hero-images md:absolute">
+            <motion.div
+            // initial={{opacity:0, x:100}} 
+            // whileInView={{ opacity: 1, x:0}} 
+            // transition={{duration: 1, delay: 0.1, type: 'tween'}}
+            className="hero-images-cont">
+              <img src={Teacher} alt="" className="teacher-img"/>
+              <img src={Student} alt="" className="student-img"/>
+              <img src={Ellipse1} alt="" className="mobile-spiral md:hidden"/>
+              <img src={rounddesktop} alt="" className="desktop-spiral hidden md:block" />
+              <div className="green-abs md:hidden">Become an innovator in the Tech Ecosystem</div>
+              <div className="blue-abs md:hidden">Gain practical insights on how to leverage <br /> technology to build sustainable solutions</div>
+            </motion.div>
+          </div>
         </div>
-        <section className="text-white font-[500] bg-[#001B6B] h-[54px] partners font-jakarta text-xs">
+        <section className="text-white font-[500] bg-[#001B6B] h-[54px] md:h-[7.5vw] md:text-xl partners font-jakarta text-xs">
           <div className="meet-partners">Meet our &nbsp; <span className="font-semibold">PARTNERS</span></div>
         </section>
       </main>

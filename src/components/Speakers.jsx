@@ -3,7 +3,8 @@ import Profile2 from "../assets/profile2.png";
 import oswald from "../assets/speakers/oswald-speaker.jpg";
 import ihenyen from "../assets/speakers/speaker-ihenyen.jpg";
 import stanley from "../assets/speakers/speaker-stanley.jpg";
-import eyitayo from "../assets/speakers/eyitayo.jpg"
+import eyitayo from "../assets/speakers/eyitayo.jpg";
+import thelma from "../assets/speakers/thelma.jpg"
 let speakers = [
     {
       name: "Oswald Osaretin",
@@ -25,11 +26,11 @@ let speakers = [
       position: "FOUNDER/CEO, UTIVA",
       profile: eyitayo
     },
-//     {
-//       name: "Senator Ihenyen",
-//       position: "Lead Partner, Infusion Lawyers",
-//       profile: ihenyen
-//     },
+    {
+      name: "Thelma Opurum",
+      position: "CO-FOUNDER, CARNET & ECLIPSE HR",
+      profile: thelma
+    },
 //     {
 //       name: "Golomo Stanley",
 //       position: "Co-founder/CEO of Farmchain Finance & Rotacash",
