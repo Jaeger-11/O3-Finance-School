@@ -47,8 +47,8 @@ const Speakers = () => {
             <div className="speaker">
               <img src={profile} alt="" />
               <div className="profile text-white font-jakarta text-center">
-                <h4 className="capitalize text-base font-bold">{name}</h4>
-                <p className=" text-[10px]">{position}</p>
+                <h4 className="capitalize text-base font-bold md:text-[1.6vw]">{name}</h4>
+                <p className=" text-[10px] md:text-[1vw]">{position}</p>
               </div>
             </div>
             )

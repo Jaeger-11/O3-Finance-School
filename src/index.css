@@ -183,12 +183,13 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
 .speakers{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3vw;
+  gap: 1vw;
   padding-top: 10px;
+  justify-content: center;
 }
 .speaker{
   position: relative;
-  border-radius: 5vw;
+  border-radius: 3.8vw;
   overflow: hidden;
   aspect-ratio: 150/258;
 }
@@ -204,6 +205,7 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   bottom: 10%;
   width: 100%;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 0;
 }
 .gallery{
   display: flex;
@@ -292,6 +294,12 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
     right: 0;
     top: 0;
     z-index: -1;
+  }
+  .speakers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.6vw;
+    padding-top: 10px;
   }
 }
 

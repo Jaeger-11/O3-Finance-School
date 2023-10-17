@@ -103,10 +103,10 @@ function Home() {
         </div>
       </article>
       {/* ABOUT EVENT */}
-      <div className="m-4 text-black font-jakarta md:mx-[5vw]">
-          <span  className="text-xs">Learn</span>
-          <h2 className="font-semibold text-base">ABOUT EVENT</h2>
-          <p className="my-2">
+      <div className="m-4 text-black font-jakarta md:m-[5vw]">
+          <p className="text-xs md:text-lg md:text-center">Learn</p>
+          <h2 className="font-semibold text-base md:text-[2vw] md:text-center">ABOUT EVENT</h2>
+          <p className="my-2 md:flex md:justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
@@ -146,7 +146,7 @@ function Home() {
           </section>
         </section>
       {/* SPEAKERS */}
-      <section className="mx-4 my-6 text-black font-jakarta relative">
+      <section className="mx-4 my-6 text-black font-jakarta relative  md:m-[5vw] md:text-center">
         <svg width="326" className="blob" height="546" viewBox="0 0 326 546" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M273 546C423.774 546 546 423.774 546 273C546 122.226 423.774 0 273 0C122.226 0 0 122.226 0 273C0 423.774 122.226 546 273 546Z" fill="url(#paint0_linear_234_1035)" fill-opacity="0.7"/>
           <defs>
@@ -158,20 +158,20 @@ function Home() {
           </linearGradient>
           </defs>
         </svg>
-        <span  className="text-xs">Meet</span>
-        <h2 className="font-semibold text-base">OUR SPEAKERS</h2>
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
+        <span  className="text-xs md:text-lg">Meet</span>
+        <h2 className="font-semibold text-base md:text-[2vw]">OUR SPEAKERS</h2>
+        <p className="md:flex md:justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="md:mt-2" width="112" height="2" viewBox="0 0 112 2" fill="none">
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </p>
         <Speakers/>
       </section>
       {/* PARTICIPATING SCHOOLS */}
-      <section className="mx-4 my-8 text-black font-jakarta">
-        <h2 className="font-semibold text-base">PARTICIPATING SCHOOLS</h2>
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
+      <section className="mx-4 my-8 text-black font-jakarta md:m-[5vw] md:text-center">
+        <h2 className="font-semibold text-base md:text-[2vw]">PARTICIPATING SCHOOLS</h2>
+        <p className="md:flex md:justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="md:mt-2" width="112" height="2" viewBox="0 0 112 2" fill="none">
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </p>
@@ -180,11 +180,11 @@ function Home() {
         </section>
       </section>
       {/* EVENTS */}
-      <section className="mx-4 my-8 text-black font-jakarta">
-        <span  className="text-xs">Event Gallery</span>
-        <h2 className="font-semibold text-base">O3 EVENTS IN GALLERY</h2>
-        <p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
+      <section className="mx-4 my-8 text-black font-jakarta md:m-[5vw] md:text-center">
+        <span  className="text-xs md:text-lg">Event Gallery</span>
+        <h2 className="font-semibold text-base md:text-[2vw]">O3 EVENTS IN GALLERY</h2>
+        <p className="md:flex md:justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="md:mt-2" width="112" height="2" viewBox="0 0 112 2" fill="none">
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </p>
@@ -202,9 +202,9 @@ function Home() {
       </section>
 
       {/* Join Community Section */}
-      <section className="px-4 py-8 text-black font-jakarta bg-[#F99898]">
-        <span  className="text-xs">Stay Updated</span>
-        <h2 className="font-semibold text-base">JOIN OUR COMMUNITIES</h2>
+      <section className="px-4 py-8 text-black font-jakarta bg-[#F99898] md:p-[5vw]">
+        <span  className="text-xs md:text-lg">Stay Updated</span>
+        <h2 className="font-semibold text-base md:text-[2vw]">JOIN OUR COMMUNITIES</h2>
         <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
