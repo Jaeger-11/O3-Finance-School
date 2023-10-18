@@ -23,6 +23,16 @@ import Gallery4 from "../assets/gallery4.png";
 import Gallerybig from "../assets/gallerybig.png";
 import SchoolsCarousel from "../components/SchoolCarousel";
 import Speakers from "../components/Speakers";
+import image1 from "../assets/desktop-down-left.png";
+import image2 from "../assets/desktop-down-right.png";
+import image3 from "../assets/desktop-top-left.png";
+import olubori from "../assets/olubori.jpeg"
+import xeus from "../assets/xeus.jpeg"
+import event1 from "../assets/event-1.jpeg"
+import event2 from "../assets/event-2.jpeg"
+import event3 from "../assets/event-3.jpeg"
+import team1 from "../assets/team-1.jpeg"
+import team2 from "../assets/team-2.jpeg"
 
 function Home() {
 
@@ -190,14 +200,16 @@ function Home() {
         </p>
         <section className="gallery mt-4">
           <div>
-            <img src={Gallerybig} alt="" />
+            <img src={event1} alt="" />
           </div>
           <div className="small-gallery">
-            <img src={Gallery4} alt="" />
-            <img src={Gallery3} alt="" />
-            <img src={Gallery1} alt="" />
-            <img src={Gallery2} alt="" />
+            <img src={olubori} alt="" />
+            <img src={event2} alt="" />
+            <img src={xeus} alt="" />
+            <img src={event3} alt="" />
           </div>
+          <img src={team1} alt="" />
+          <img src={team2} alt="" />
         </section>
       </section>
 
