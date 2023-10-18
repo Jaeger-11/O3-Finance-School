@@ -33,11 +33,12 @@ import event2 from "../assets/event-2.jpeg"
 import event3 from "../assets/event-3.jpeg"
 import team1 from "../assets/team-1.jpeg"
 import team2 from "../assets/team-2.jpeg"
+import Countdown from "../components/Countdown";
 
 function Home() {
 
   return (
-    <div className='home font-jakarta'>
+    <div className='home font-jakarta overflow-hidden'>
       {/* hero section */}
       <main >
         <Navbar/>
@@ -140,21 +141,7 @@ function Home() {
           </h3>
         </div>
         {/* EVENT DATE AND COUNTDOWN */}
-        <section className="bg-[#002478] text-white p-6 text-center font-jakarta">
-          <div className="my-6">
-            <p className="text-xs font-[300]">Date</p>
-            <h4>30th October - 10th November, <br /> 2023</h4>
-          </div>
-          <div className="my-6">
-            <p className="text-xs font-[300]">Time</p>
-            <h4>08:00 pm daily</h4>
-          </div>
-          <section className="my-6 border border-white-100 p-4 flex justify-evenly font-bold text-base rounded-3xl">
-            <div><span>29</span><br /> DAYS</div>
-            <div><span>20</span><br /> HOURS</div>
-            <div><span>20</span><br /> MINUTES</div>
-          </section>
-        </section>
+        <Countdown/>
       {/* SPEAKERS */}
       <section className="mx-4 my-6 text-black font-jakarta relative  md:m-[5vw] md:text-center">
         <svg width="326" className="blob" height="546" viewBox="0 0 326 546" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,13 +204,13 @@ function Home() {
       <section className="px-4 py-8 text-black font-jakarta bg-[#F99898] md:p-[5vw]">
         <span  className="text-xs md:text-lg">Stay Updated</span>
         <h2 className="font-semibold text-base md:text-[2vw]">JOIN OUR COMMUNITIES</h2>
-        <p>
+        <p className="md:mt-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="112" height="2" viewBox="0 0 112 2" fill="none">
               <path d="M1 1H111" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </p>
         <section className="mt-4 community-section">
-          <p className="text-xs">Join the Community to be a part of the TIPS Conversation - The FOW Weekly Series on Web1, Web2, and Web3 Concepts, Versus Technology.</p>
+          <p className="text-xs md:text-xl w-2/3">Join the Community to be a part of the TIPS Conversation - The FOW Weekly Series on Web1, Web2, and Web3 Concepts, Versus Technology.</p>
           <div className="links">
             <a href="https://x.com/o3financeschool" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="" /></a>
             <a href="https://www.facebook.com/03financeschool" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="" /></a>

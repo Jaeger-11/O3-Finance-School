@@ -4,8 +4,8 @@
 }
 body{
   background-color: white;
-  /* width: 100vw; */
-  /* overflow-x: hidden; */
+  width: 100vw;
+  overflow-x: hidden !important;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -225,6 +225,7 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 .community-section{
   display: flex;
+  gap: 5vw;
 }
 .community-section p{
   flex: 1;
@@ -243,9 +244,9 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   grid-template-columns: repeat(6, minmax(15.625vw, 1fr)); */
   display: flex;
   margin-top: 1rem;
-  gap: 7.5vw;
+  gap: 5vw;
   width: 100%;
-  /* overflow: scroll; */
+  overflow-x: hidden;
 }
 .school-carousel{
   width: 100vw;
@@ -319,6 +320,14 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
     grid-template-columns: 1fr 1fr;
     gap: 0.73vw;
     justify-content: center;
+  }
+  .links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    /* flex: auto; */
   }
 }
 
