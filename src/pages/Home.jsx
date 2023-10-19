@@ -1,6 +1,3 @@
-import heroImage from "../assets/heroimagenew.png";
-import discord from "../assets/discord.svg";
-import telegram from "../assets/telegram.svg";
 import twitter from "../assets/twitter.png";
 import linkedin from "../assets/linkedin.svg";
 import facebook from "../assets/facebook.svg"
@@ -9,7 +6,6 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import CoursesHome from "../components/CoursesHome";
 import { stats } from "../data";
-import community from "../assets/communities.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Teacher from "../assets/Teacher.svg";

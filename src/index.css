@@ -239,14 +239,7 @@ transform: rotate(-45deg) translateY(6px) translate(-6px);
   /* flex: auto; */
 }
 .school-carousel{
-  /* display: grid;
-  grid-template-columns: repeat();
-  grid-template-columns: repeat(6, minmax(15.625vw, 1fr)); */
-  display: flex;
   margin-top: 1rem;
-  gap: 5vw;
-  width: 100%;
-  overflow-x: hidden;
 }
 .school-carousel{
   width: 100vw;
