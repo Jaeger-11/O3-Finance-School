@@ -16,16 +16,8 @@ import Teacher from "../assets/Teacher.svg";
 import Student from "../assets/Student.svg";
 import Ellipse1 from "../assets/round-hero-mobile.svg";
 import rounddesktop from "../assets/round-desktop.svg";
-import Gallery1 from "../assets/gallery1.png";
-import Gallery2 from "../assets/gallery2.png";
-import Gallery3 from "../assets/gallery3.png";
-import Gallery4 from "../assets/gallery4.png";
-import Gallerybig from "../assets/gallerybig.png";
 import SchoolsCarousel from "../components/SchoolCarousel";
 import Speakers from "../components/Speakers";
-import image1 from "../assets/desktop-down-left.png";
-import image2 from "../assets/desktop-down-right.png";
-import image3 from "../assets/desktop-top-left.png";
 import olubori from "../assets/olubori.jpeg"
 import xeus from "../assets/xeus.jpeg"
 import event1 from "../assets/event-1.jpeg"

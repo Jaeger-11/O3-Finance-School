@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
 
         <div className='hidden font-jakarta md:block'>
-          <button className='bg-lightblue text-white py-2 px-8 text-base font-medium rounded-full'>Register</button>
+          <a href="https://bit.ly/FOWO3FS"><button className='bg-lightblue text-white py-2 px-8 text-base font-medium rounded-full'>Register</button></a>
           {/* <button className='py-2 px-3 transition-all border border-darkblue text-darkblue hover:text-white hover:bg-darkblue md:mx-4'>Sign up</button>
           <button className='py-2 px-4 transition-all bg-darkblue text-white hover:bg-white hover:text-darkblue hover:border hover:border-darkblue'>Login</button> */}
         </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <p><Link to="/courses" className="hover:font-bold text-white font-medium">Community</Link></p>
           {/* <p><Link to="/contact" className="hover:font-bold text-white font-medium transition-all">Contact</Link></p>
           <p><Link to="/events" className="hover:font-bold text-white font-medium transition-all">Events</Link></p> */}
-          <button className='py-2 px-3 transition-all border border-darkblue bg-white text-darkblue hover:text-white hover:bg-darkblue md:mx-4'>Register</button>
+          <a href="https://bit.ly/FOWO3FS"><button className='py-2 px-3 transition-all border border-darkblue bg-white text-darkblue hover:text-white hover:bg-darkblue md:mx-4'>Register</button></a>
           {/* <button className='py-2 px-4 transition-all bg-darkblue text-white hover:bg-white hover:text-darkblue hover:border hover:border-darkblue'>Login</button> */}
 
         </div>
