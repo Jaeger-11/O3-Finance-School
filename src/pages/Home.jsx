@@ -33,9 +33,9 @@ function Home() {
         <div className=' md:px-[5vw] md:mt-6 relative'>
           <section className='flex flex-col gap-6 px-4 py-8 md:px-0 md:pb-12'>
             <motion.article 
-            // initial={{opacity:0, y:100}} 
-            // whileInView={{ opacity: 1, y:0}} 
-            // transition={{duration: 1, delay: 0.1, type: 'tween'}}
+            initial={{opacity:0, y:100}} 
+            whileInView={{ opacity: 1, y:0}} 
+            transition={{duration: 1, delay: 0.1, type: 'tween'}}
             className=" text-black md:text-left ">
               <h3 className="text-[32px] transition-all mb-2 md:text-4xl clash-semibold text-dark2">
                 The Future of Work in Technology: <br /> <span className="text-lightblue">Exhibition of Work</span> 
@@ -56,9 +56,9 @@ function Home() {
           </section>
           <div className="relative hero-images md:absolute">
             <motion.div
-            // initial={{opacity:0, x:100}} 
-            // whileInView={{ opacity: 1, x:0}} 
-            // transition={{duration: 1, delay: 0.1, type: 'tween'}}
+            initial={{opacity:0, x:100}} 
+            whileInView={{ opacity: 1, x:0}} 
+            transition={{duration: 1, delay: 0.1, type: 'tween'}}
             className="hero-images-cont">
               <img src={Teacher} alt="" className="teacher-img"/>
               <img src={Student} alt="" className="student-img"/>
