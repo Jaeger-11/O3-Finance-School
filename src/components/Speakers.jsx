@@ -15,7 +15,7 @@ import oluwashina from "../assets/speakers/Oluwashina-Peter.jpg";
 import richard from "../assets/speakers/Richard-Okunola.jpg";
 // import salisu from "../assets/speakers/salisu.png";
 import tobiloba from "../assets/speakers/Tobiloba-Idowu.jpg";
-import tosin from "../assets/speakers/tosin.jpg";
+// import tosin from "../assets/speakers/tosin.jpg";
 import tunde from "../assets/speakers/tunde.jpg";
 import yadheedhya from "../assets/speakers/Yadheedhya.jpg";
 
@@ -92,11 +92,12 @@ let speakers = [
       name: "Tobiloba Idowu",
       position: "Finance Analyst",
       profile: tobiloba
-    },{
-      name: "Oluwatosin Olaseinde",
-      position: "Founder/CEO, Money Africa",
-      profile: tosin
     },
+    // {
+    //   name: "Oluwatosin Olaseinde",
+    //   position: "Founder/CEO, Money Africa",
+    //   profile: tosin
+    // },
     {
       name: "Fine boy Tunde",
       position: "",
