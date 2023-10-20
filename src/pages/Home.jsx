@@ -189,7 +189,7 @@ function Home() {
       </section>
 
       {/* Join Community Section */}
-      <section className="px-4 py-8 text-black font-jakarta bg-[#F99898] md:p-[5vw]">
+      <section className="px-4 py-8 text-black font-jakarta bg-[#F99898] md:p-[5vw]" id="community">
         <span  className="text-xs md:text-lg">Stay Updated</span>
         <h2 className="font-semibold text-base md:text-[2vw]">JOIN OUR COMMUNITIES</h2>
         <p className="md:mt-2">

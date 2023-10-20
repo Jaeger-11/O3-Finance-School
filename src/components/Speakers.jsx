@@ -4,7 +4,21 @@ import oswald from "../assets/speakers/oswald-speaker.jpg";
 import ihenyen from "../assets/speakers/speaker-ihenyen.jpg";
 import stanley from "../assets/speakers/speaker-stanley.jpg";
 import eyitayo from "../assets/speakers/eyitayo.jpg";
-import thelma from "../assets/speakers/thelma.jpg"
+import thelma from "../assets/speakers/thelma.jpg";
+import divinegift from "../assets/speakers/Divinegift-Soetan.jpg";
+import kue from "../assets/speakers/Kue-Barinor-Paul.jpg";
+import odion from "../assets/speakers/Odion-Tobi.jpg";
+import olabanji from "../assets/speakers/Olabanji-Samuel.jpg";
+import oluseyiA from "../assets/speakers/Oluseyi-Akindeine.jpg";
+import olarenwaju from "../assets/speakers/Oluseyi-Olarenwaju.jpg";
+import oluwashina from "../assets/speakers/Oluwashina-Peter.jpg";
+import richard from "../assets/speakers/Richard-Okunola.jpg";
+import salisu from "../assets/speakers/Salisu-Uba.png";
+import tobiloba from "../assets/speakers/Tobiloba-Idowu.jpg";
+import tosin from "../assets/speakers/tosin.jpg";
+import tunde from "../assets/speakers/tunde.jpg";
+import yadheedhya from "../assets/speakers/Yadheedhya.jpg";
+
 let speakers = [
     {
       name: "Oswald Osaretin",
@@ -31,11 +45,68 @@ let speakers = [
       position: "CO-FOUNDER, CARNET & ECLIPSE HR",
       profile: thelma
     },
-//     {
-//       name: "Golomo Stanley",
-//       position: "Co-founder/CEO of Farmchain Finance & Rotacash",
-//       profile: stanley
-//     },
+    {
+      name: "Divinegift A. Soetan",
+      position: "Founder & CEO, HealthGo Inc & Swyypepay",
+      profile: divinegift
+    },
+    {
+      name: "Kue Barinor Paul",
+      position: "Founder & Lead Partner, Blocklex Consulting",
+      profile: kue
+    },
+    {
+      name: "Odion Tobi",
+      position: "eclectic artist",
+      profile: odion
+    },
+    {
+      name: "Olabanji Samuel",
+      position: "Co-founder & CEO, Enoverlab",
+      profile: olabanji
+    },
+    {
+      name: "Oluseyi Akindeine",
+      position: "Founder, Hyperspace Technologies",
+      profile: oluseyiA
+    },
+    {
+      name: "Oluseyi Olarenwaju",
+      position: "CFO Medallion Datacenter",
+      profile: olarenwaju
+    },{
+      name: "Oluwashina Peter",
+      position: "Founder of Gateway",
+      profile: oluwashina
+    },{
+      name: "Richard Okunola",
+      position: "",
+      profile: richard
+    },
+    {
+      name: "Dr. Salisu Uba",
+      position: "Founder NatQuest",
+      profile: salisu
+    },
+    {
+      name: "Tobiloba Idowu",
+      position: "Finance Analyst",
+      profile: tobiloba
+    },{
+      name: "Oluwatosin Olaseinde",
+      position: "Founder/CEO, Money Africa",
+      profile: tosin
+    },
+    {
+      name: "Fine boy Tunde",
+      position: "",
+      profile: tunde
+    },
+    {
+      name: "Yadheedhya",
+      position: "AI Engineer, Brain DAO",
+      profile: yadheedhya
+    },
 ]
 
 const Speakers = () => {
@@ -46,9 +117,9 @@ const Speakers = () => {
             return (
             <div className="speaker">
               <img src={profile} alt="" />
-              <div className="profile text-white font-jakarta text-center">
+              <div className="profile text-white font-jakarta text-center p-[2px]">
                 <h4 className="capitalize text-base font-bold md:text-[1.6vw]">{name}</h4>
-                <p className=" text-[10px] md:text-[1vw]">{position}</p>
+                <p className="uppercase text-[10px] md:text-[1vw]">{position}</p>
               </div>
             </div>
             )
