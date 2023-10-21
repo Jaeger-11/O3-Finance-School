@@ -13,9 +13,9 @@ import oluseyiA from "../assets/speakers/Oluseyi-Akindeine.jpg";
 import olarenwaju from "../assets/speakers/Oluseyi-Olarenwaju.jpg";
 import oluwashina from "../assets/speakers/Oluwashina-Peter.jpg";
 import richard from "../assets/speakers/Richard-Okunola.jpg";
-import salisu from "../assets/speakers/salisu.png";
+// import salisu from "../assets/speakers/salisu.png";
 import tobiloba from "../assets/speakers/Tobiloba-Idowu.jpg";
-import tosin from "../assets/speakers/tosin.jpg";
+import tosin from "../assets/speakers/TOSIN1.jpg";
 import tunde from "../assets/speakers/tunde.jpg";
 import yadheedhya from "../assets/speakers/Yadheedhya.jpg";
 // import progress from "../assets/speakers/progress-ayere.heic";
@@ -87,8 +87,8 @@ let speakers = [
     },
     {
       name: "Dr. Salisu Uba",
-      position: "Founder NatQuest",
-      profile: salisu
+      position: "Founder, NatQuest",
+      // profile: salisu
     },
     {
       name: "Tobiloba Idowu",
