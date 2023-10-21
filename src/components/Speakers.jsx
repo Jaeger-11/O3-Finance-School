@@ -13,11 +13,13 @@ import oluseyiA from "../assets/speakers/Oluseyi-Akindeine.jpg";
 import olarenwaju from "../assets/speakers/Oluseyi-Olarenwaju.jpg";
 import oluwashina from "../assets/speakers/Oluwashina-Peter.jpg";
 import richard from "../assets/speakers/Richard-Okunola.jpg";
-// import salisu from "../assets/speakers/salisu.png";
+import salisu from "../assets/speakers/salisu.png";
 import tobiloba from "../assets/speakers/Tobiloba-Idowu.jpg";
-// import tosin from "../assets/speakers/tosin.jpg";
+import tosin from "../assets/speakers/tosin.jpg";
 import tunde from "../assets/speakers/tunde.jpg";
 import yadheedhya from "../assets/speakers/Yadheedhya.jpg";
+// import progress from "../assets/speakers/progress-ayere.heic";
+import jude from "../assets/speakers/Jude-Ozinegbe.jpg";
 
 let speakers = [
     {
@@ -83,21 +85,21 @@ let speakers = [
       position: "",
       profile: richard
     },
-    // {
-    //   name: "Dr. Salisu Uba",
-    //   position: "Founder NatQuest",
-    //   profile: salisu
-    // },
+    {
+      name: "Dr. Salisu Uba",
+      position: "Founder NatQuest",
+      profile: salisu
+    },
     {
       name: "Tobiloba Idowu",
       position: "Finance Analyst",
       profile: tobiloba
     },
-    // {
-    //   name: "Oluwatosin Olaseinde",
-    //   position: "Founder/CEO, Money Africa",
-    //   profile: tosin
-    // },
+    {
+      name: "Oluwatosin Olaseinde",
+      position: "Founder/CEO, Money Africa",
+      profile: tosin
+    },
     {
       name: "Fine boy Tunde",
       position: "",
@@ -107,6 +109,16 @@ let speakers = [
       name: "Yadheedhya",
       position: "AI Engineer, Brain DAO",
       profile: yadheedhya
+    },
+    {
+      name: "Progress Ayere",
+      // position: "AI Engineer, Brain DAO",
+      // profile: progress
+    },
+    {
+      name: "Jude Ozinegbe",
+      position: "Founder, Cyberchain",
+      profile: jude
     },
 ]
 

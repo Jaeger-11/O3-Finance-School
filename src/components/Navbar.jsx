@@ -1,5 +1,5 @@
 import React from 'react';
-import O3logo from "../assets/o3logo.png";
+import O3logo from "../assets/logo.png";
 import {useState} from "react";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
@@ -13,14 +13,14 @@ const Navbar = () => {
   }
 
   return (
-    <motion.nav className="jakarta border-b border-lightblue text-darkblue mx-auto p-4 md:p-0 md:pt-4 md:pb-4"
+    <motion.nav className="jakarta border-b border-lightblue text-darkblue mx-auto px-4 py-2 md:p-0 md:pt-4 md:pb-4"
     initial={{opacity:0,y:-50}}
     animate={{opacity:1,y:0}}
     transition={{duration:0.5}}
     >
       <div className="flex items-center justify-between md:mx-[5vw]">
         <div>
-          <a href="/"><img src={O3logo} className="h-8 md:h-auto" alt="O3 finance school"/></a>
+          <a href="/"><img src={O3logo} className="h-12 md:h-auto" alt="O3 finance school"/></a>
         </div>
 
         {/* <!-- menu items --> */}
