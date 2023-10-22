@@ -1,5 +1,3 @@
-import Profile from "../assets/profile.jpg";
-import Profile2 from "../assets/profile2.png";
 import oswald from "../assets/speakers/oswald-speaker.jpg";
 import ihenyen from "../assets/speakers/speaker-ihenyen.jpg";
 import stanley from "../assets/speakers/speaker-stanley.jpg";
@@ -15,11 +13,12 @@ import oluwashina from "../assets/speakers/Oluwashina-Peter.jpg";
 import richard from "../assets/speakers/Richard-Okunola.jpg";
 // import salisu from "../assets/speakers/salisu.png";
 import tobiloba from "../assets/speakers/Tobiloba-Idowu.jpg";
-import tosin from "../assets/speakers/TOSIN1.jpg";
+// import tosin from "../assets/speakers/TOSIN1.jpg";
 import tunde from "../assets/speakers/tunde.jpg";
 import yadheedhya from "../assets/speakers/Yadheedhya.jpg";
 // import progress from "../assets/speakers/progress-ayere.heic";
 import jude from "../assets/speakers/Jude-Ozinegbe.jpg";
+import { motion } from "framer-motion";
 
 let speakers = [
     {
@@ -98,7 +97,7 @@ let speakers = [
     {
       name: "Oluwatosin Olaseinde",
       position: "Founder/CEO, Money Africa",
-      profile: tosin
+      // profile: tosin
     },
     {
       name: "Fine boy Tunde",
@@ -128,13 +127,16 @@ const Speakers = () => {
           {speakers.map((speaker) => {
             const {profile, name, position} = speaker
             return (
-            <div className="speaker">
+            <motion.div className="speaker" initial={{opacity:0, y:30}} 
+            whileInView={{ opacity: 1, y:0}} 
+            transition={{duration: 1, delay: 0.1, type: 'tween'}}
+            >
               <img src={profile} alt="" />
               <div className="profile text-white font-jakarta text-center p-[2px]">
                 <h4 className="capitalize text-base font-bold md:text-[1.6vw]">{name}</h4>
                 <p className="uppercase text-[10px] md:text-[1vw]">{position}</p>
               </div>
-            </div>
+            </motion.div>
             )
           })}
         </section>

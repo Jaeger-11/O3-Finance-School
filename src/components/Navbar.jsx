@@ -1,7 +1,7 @@
 import React from 'react';
 import O3logo from "../assets/logo.png";
 import {useState} from "react";
-import { Link } from "react-router-dom";
+// import { a } from "react-router-dom";
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -20,14 +20,14 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between md:mx-[5vw]">
         <div>
-          <a href="/"><img src={O3logo} className="h-12 md:h-auto" alt="O3 finance school"/></a>
+          <a href="#home"><img src={O3logo} className="h-12 md:h-auto" alt="O3 finance school"/></a>
         </div>
 
         {/* <!-- menu items --> */}
         <div className="hidden md:flex gap-8 items-center text-base text-dark1 font-jakarta">
-          <Link to="/" className="hover:font-bold font-medium transition-all">Home</Link>
-          <Link to="/" className="hover:font-bold font-medium transition-all">Partners</Link>
-          <Link to="/" className="hover:font-bold font-medium transition-all">Community</Link>
+          <a href="#home" className="hover:font-bold font-medium transition-all">Home</a>
+          <a href="#partners" className="hover:font-bold font-medium transition-all">Partners</a>
+          <a href="#community" className="hover:font-bold font-medium transition-all">Community</a>
         </div>
 
         <div className='hidden font-jakarta md:block'>
@@ -46,10 +46,10 @@ const Navbar = () => {
       { clicked ?  
       <div className="md:hidden">
         <div id="menu" className="absolute z-10 flex flex-col items-center text-center rounded-md left-6 right-6 self-end py-4 mt-2 gap-4 bg-black">
-          <p><Link to="/" className="hover:font-bold text-white font-medium transition-all">Home</Link></p>
-          <p><Link to="/about" className="hover:font-bold text-white font-medium transition-all">Partners</Link></p>
-          <p><Link to="/courses" className="hover:font-bold text-white font-medium">Community</Link></p>
-          <a href="https://bit.ly/FOWO3FS"><button className='py-2 px-3 transition-all border border-darkblue bg-white text-darkblue hover:text-white hover:bg-darkblue md:mx-4'>Register</button></a>
+          <p><a href="#home" className="hover:font-bold text-white font-medium transition-all">Home</a></p>
+          <p><a href="#partners" className="hover:font-bold text-white font-medium transition-all">Partners</a></p>
+          <p><a href="#community" className="hover:font-bold text-white font-medium">Community</a></p>
+          <a href="https://bit.ly/FOWO3FS"><button className='py-2 px-3 transition-all border border-darkblue bg-white text-darkblue hover:bg-darkblue md:mx-4'>Register</button></a>
         </div>
       </div> : null
       }
