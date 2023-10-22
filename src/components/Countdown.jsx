@@ -41,7 +41,7 @@ const Countdown = () => {
             <div><span className="text-xl md:text-2xl">{timeLeft.seconds}</span><br /> SECS</div>
           </section>
           <div className="justify-center hidden md:flex items-center ">
-            <a href="https://bit.ly/FOWO3FS"> <p className="px-[5vw] py-4 w-max border rounded-full">Register</p> </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_yZdEWX3-JQrzHuF48FWU3V2Bdd9PSQ-RdRM2WBIuABJDcQ/viewform"> <p className="px-[5vw] py-4 w-max border rounded-full">Register</p> </a>
           </div>
         </section>
       )

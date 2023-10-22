@@ -44,7 +44,7 @@ function Home() {
                 <div className="blue-abs-md">Gain practical insights on how to leverage <br /> technology to build sustainable solutions</div>
                 <div className="green-abs-md">Become an Innovator in the Tech Ecosystem</div>
               </div>
-              <a href='https://bit.ly/FOWO3FS'>
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSd_yZdEWX3-JQrzHuF48FWU3V2Bdd9PSQ-RdRM2WBIuABJDcQ/viewform'>
                 <motion.button 
                 whileTap={{scale:0.9}}
                 whileHover={{scale: 1.1}}
@@ -129,7 +129,7 @@ function Home() {
             Because we’ll be taking you by the hands to show you everything you need to know about the tech ecosystem including how you can leverage the rapid advancements to be positioned like the Elites in your field of work. <br /> Don’t wait till the last minute, Get in now!
             </p>
           </div>
-          <a href="https://bit.ly/FOWO3FS" target="_blank" rel="noopener noreferrer"><h3 className="my-6 text-base md:text-xl text-[#0B0B0B] flex items-center gap-4 font-[500]">Book Space  
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_yZdEWX3-JQrzHuF48FWU3V2Bdd9PSQ-RdRM2WBIuABJDcQ/viewform" target="_blank" rel="noopener noreferrer"><h3 className="my-6 text-base md:text-xl text-[#0B0B0B] flex items-center gap-4 font-[500]">Book Space  
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
             <path d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z" fill="black"/>
           </svg>

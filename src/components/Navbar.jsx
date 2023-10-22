@@ -13,7 +13,7 @@ const Navbar = () => {
   }
 
   return (
-    <motion.nav className="jakarta border-b border-lightblue text-darkblue mx-auto px-4 py-2 md:p-0 md:pt-4 md:pb-4"
+    <motion.nav className="jakarta border-b border-lightblue text-darkblue mx-auto px-4 py-2 md:p-0 "
     initial={{opacity:0,y:-50}}
     animate={{opacity:1,y:0}}
     transition={{duration:0.5}}
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
 
         <div className='hidden font-jakarta md:block'>
-          <a href="https://bit.ly/FOWO3FS"><button className='bg-lightblue text-white py-2 px-8 text-base font-medium rounded-full'>Register</button></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_yZdEWX3-JQrzHuF48FWU3V2Bdd9PSQ-RdRM2WBIuABJDcQ/viewform"><button className='bg-lightblue text-white py-2 px-8 text-base font-medium rounded-full'>Register</button></a>
         </div>
 
         {/* <!-- Hamburger Icon --> */}
@@ -49,7 +49,7 @@ const Navbar = () => {
           <p><a href="#home" className="hover:font-bold text-white font-medium transition-all">Home</a></p>
           <p><a href="#partners" className="hover:font-bold text-white font-medium transition-all">Partners</a></p>
           <p><a href="#community" className="hover:font-bold text-white font-medium">Community</a></p>
-          <a href="https://bit.ly/FOWO3FS"><button className='py-2 px-3 transition-all border border-darkblue bg-white text-darkblue hover:bg-darkblue md:mx-4'>Register</button></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_yZdEWX3-JQrzHuF48FWU3V2Bdd9PSQ-RdRM2WBIuABJDcQ/viewform"><button className='py-2 px-3 transition-all border border-darkblue bg-white text-darkblue hover:bg-darkblue md:mx-4'>Register</button></a>
         </div>
       </div> : null
       }
