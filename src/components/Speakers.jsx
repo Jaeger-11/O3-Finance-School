@@ -110,11 +110,6 @@ let speakers = [
       profile: yadheedhya
     },
     {
-      name: "Progress Ayere",
-      // position: "AI Engineer, Brain DAO",
-      // profile: progress
-    },
-    {
       name: "Jude Ozinegbe",
       position: "Founder, Cyberchain",
       profile: jude
