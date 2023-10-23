@@ -6,8 +6,7 @@ import DC from "../assets/partners/DC1.png";
 import HGO from "../assets/partners/healthGO.png";
 import kaspa from "../assets/partners/kaspa.png";
 import nft from "../assets/partners/NFT-FACTORY.png";
-// import galo from "../assets/partners/galo.ai";
-import thata from "../assets/partners/thata.jpg";
+// import thata from "../assets/partners/thata.jpg";
 import web3nifty from "../assets/partners/web3nifty.jpg";
 import womeninDEFI from "../assets/partners/womeninDEFI.png";
 import "slick-carousel/slick/slick.css";
@@ -56,7 +55,7 @@ const Partners = () => {
             <img src={kaspa} />
             <img src={nft} />
             <img src={'https://galobank.finance/wp-content/uploads/2021/09/B-LOGO-GALO-BLANCO.png'} />
-            <img src={thata} />
+            {/* <img src={thata} /> */}
             <img src={web3nifty} />
             <img src={womeninDEFI} />
         </Slider>
