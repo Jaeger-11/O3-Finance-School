@@ -8,7 +8,7 @@ import kaspa from "../assets/partners/kaspa.png";
 import nft from "../assets/partners/NFT-FACTORY.png";
 // import thata from "../assets/partners/thata.jpg";
 import web3nifty from "../assets/partners/web3nifty.jpg";
-import womeninDEFI from "../assets/partners/womeninDEFI.png";
+// import womeninDEFI from "../assets/partners/womeninDEFI.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -57,7 +57,7 @@ const Partners = () => {
             <img src={'https://galobank.finance/wp-content/uploads/2021/09/B-LOGO-GALO-BLANCO.png'} />
             {/* <img src={thata} /> */}
             <img src={web3nifty} />
-            <img src={womeninDEFI} />
+            {/* <img src={womeninDEFI} /> */}
         </Slider>
         </section>
     )
