@@ -21,6 +21,8 @@ import event3 from "../assets/event-3.jpeg"
 import team1 from "../assets/team-1.jpeg"
 import team2 from "../assets/team-2.jpeg"
 import Countdown from "../components/Countdown";
+import Partners from "../components/Partners";
+import EmbededVideo from "../components/EmbededVideo";
 
 function Home() {
 
@@ -68,9 +70,7 @@ function Home() {
             </motion.div>
           </div>
         </div>
-        <section id="partners" className="text-white font-[500] bg-[#001B6B] h-[54px] md:h-[7.5vw] md:text-xl partners font-jakarta text-xs">
-          <div className="meet-partners">Meet our &nbsp; <span className="font-semibold">PARTNERS</span></div>
-        </section>
+        <Partners/>
       </main>
       {/* Dear Friend / Texts */}
       <motion.article
@@ -86,6 +86,7 @@ function Home() {
         </div>
         <section>
           {/* VIDEO AND SUBTEXT */}
+          <EmbededVideo/>
         </section>
         <div className="font-jakarta text-sm px-4 md:text-xl md:w-[65%] mx-auto">
           <p className="my-4 py-4">And now, we are fully transitioning into a tech economy. You see, there are two categories of people in the tech ecosystem. </p>
