@@ -1,7 +1,7 @@
-import BA from "../assets/partners/BA1.jpg";
+// import BA from "../assets/partners/BA1.jpg";
 import BEI from "../assets/partners/BEI.png";
 import BNUG from "../assets/partners/BNUG.png";
-// import CAB from "../assets/partners/CAB.png";
+import CAB from "../assets/partners/CAB.png";
 import DC from "../assets/partners/DC1.png";
 import HGO from "../assets/partners/healthGO.png";
 import kaspa from "../assets/partners/kaspa.png";
@@ -46,10 +46,10 @@ const Partners = () => {
         <section id="partners" className="text-white font-[500] bg-[#001B6B] h-[54px] md:h-[7.5vw] md:text-xl partners font-jakarta text-xs">
           <div className="meet-partners flex flex-wrap w-max"> <p> Meet our &nbsp; </p><p className="font-semibold">PARTNERS</p></div>
           <Slider {...settings} className="partners-list">
-            <img src={BA} />
+            {/* <img src={BA} /> */}
             <img src={BEI} />
             <img src={BNUG} />
-            {/* <img src={CAB} /> */}
+            <img src={CAB} />
             <img src={DC} />
             <img src={HGO} />
             <img src={kaspa} />
