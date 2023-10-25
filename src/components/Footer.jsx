@@ -27,11 +27,11 @@ const footerData = [
 
 const Footer = () => {
   return (
-    <footer className="grad text-black py-6">
+    <footer className="grad text-black text-xs md:text-base py-6">
         <section className='container mx-auto font-alternate px-8 py-8 md:flex md:flex-row-reverse md:justify-around md:items-start'>
 
             <div className='flex flex-col gap-6 md:flex-row md:flex-1 md:justify-around'>
-                <section>
+                {/* <section>
                     <h3 className='font-bold'>QUICK LINKS</h3>
                     <ul className='list-disc pl-4'>
                         <li className='my-2 font-normal'> <Link to="/about"> About us </Link></li>
@@ -39,7 +39,7 @@ const Footer = () => {
                         <li className='my-2 font-normal'> <Link to="/events"> Events </Link></li>
                         <li className='my-2 font-normal'> <Link to="/communities"> Communities </Link></li>
                     </ul>
-                </section>
+                </section> */}
 
                 <section>
                     <h3 className='font-bold'>CONTACT INFO</h3>

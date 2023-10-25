@@ -1,7 +1,7 @@
 import BA from "../assets/partners/BA1.jpg";
 import BEI from "../assets/partners/BEI.png";
 import BNUG from "../assets/partners/BNUG.png";
-import CAB from "../assets/partners/CAB.png";
+// import CAB from "../assets/partners/CAB.png";
 import DC from "../assets/partners/DC1.png";
 import HGO from "../assets/partners/healthGO.png";
 import kaspa from "../assets/partners/kaspa.png";
@@ -49,7 +49,7 @@ const Partners = () => {
             <img src={BA} />
             <img src={BEI} />
             <img src={BNUG} />
-            <img src={CAB} />
+            {/* <img src={CAB} /> */}
             <img src={DC} />
             <img src={HGO} />
             <img src={kaspa} />

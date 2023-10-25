@@ -215,7 +215,7 @@ function Home() {
           </div>
         </section>
       </section>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }

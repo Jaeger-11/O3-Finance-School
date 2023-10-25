@@ -18,6 +18,9 @@ import tunde from "../assets/speakers/tunde.jpg";
 import yadheedhya from "../assets/speakers/Yadheedhya.jpg";
 // import progress from "../assets/speakers/progress-ayere.heic";
 import jude from "../assets/speakers/Jude-Ozinegbe.jpg";
+import omotuyi from "../assets/speakers/Omotuyi.jpg";
+import jaime from "../assets/speakers/Jaime.jpg";
+import olubunmi from "../assets/speakers/Olubunmi.jpg";
 import { motion } from "framer-motion";
 
 let speakers = [
@@ -114,6 +117,21 @@ let speakers = [
       position: "Founder, Cyberchain",
       profile: jude
     },
+    {
+      name: "Omotuyi Motolani",
+      position: "Content lead &SMMWomenInDeFi",
+      profile: omotuyi
+    },
+    {
+      name: "Jaime Ruiperez",
+      position: "Blockchain Head, GaloBank",
+      profile: jaime
+    },
+    {
+      name: "Olubunmi Fabanwo",
+      position: "Blockchain Enthusiast",
+      profile: olubunmi
+    }
 ]
 
 const Speakers = () => {
