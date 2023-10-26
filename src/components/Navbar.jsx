@@ -46,10 +46,10 @@ const Navbar = () => {
       { clicked ?  
       <div className="md:hidden">
         <div id="menu" className="absolute z-10 flex flex-col items-center text-center rounded-md left-6 right-6 self-end py-4 mt-2 gap-4 bg-black">
-          <p><a href="#home" className="hover:font-bold text-white font-medium transition-all">Home</a></p>
-          <p><a href="#partners" className="hover:font-bold text-white font-medium transition-all">Partners</a></p>
-          <p><a href="#community" className="hover:font-bold text-white font-medium">Community</a></p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_yZdEWX3-JQrzHuF48FWU3V2Bdd9PSQ-RdRM2WBIuABJDcQ/viewform"><button className='py-2 px-3 transition-all border border-darkblue bg-white text-darkblue hover:bg-darkblue md:mx-4'>Register</button></a>
+          <p><a href="#home" className="hover:font-bold text-white font-medium transition-all" onClick={toggleClicked}>Home</a></p>
+          <p><a href="#partners" className="hover:font-bold text-white font-medium transition-all" onClick={toggleClicked}>Partners</a></p>
+          <p><a href="#community" className="hover:font-bold text-white font-medium" onClick={toggleClicked}>Community</a></p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_yZdEWX3-JQrzHuF48FWU3V2Bdd9PSQ-RdRM2WBIuABJDcQ/viewform" onClick={toggleClicked}><button className='py-2 px-3 transition-all border border-darkblue bg-white text-darkblue hover:bg-darkblue md:mx-4'>Register</button></a>
         </div>
       </div> : null
       }
